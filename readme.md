@@ -1,4 +1,4 @@
-## Seed code - Boilerplate for step 2 - Activity Stream Assignment
+## Seed code - Boilerplate for step 3 - Activity Stream Assignment
 
 ### Problem Statement
 
