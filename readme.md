@@ -55,7 +55,7 @@ The folders and files you see in this repositories, is how it is expected to be 
 
 2. Navigate to assignment-solution-step6 folder
 
-    `cd assignment-solution-step6`
+    `cd assignment-solution-step3`
 
 3. Remove its remote or original reference
 
