@@ -53,7 +53,7 @@ The folders and files you see in this repositories, is how it is expected to be 
      
     `git clone https://gitlab-dev.stackroute.in/activity-stream-java/step3-boilerplate.git assignment-solution-step3`
 
-2. Navigate to assignment-solution-step6 folder
+2. Navigate to assignment-solution-step3 folder
 
     `cd assignment-solution-step3`
 
@@ -61,7 +61,7 @@ The folders and files you see in this repositories, is how it is expected to be 
 
      `git remote rm origin`
 
-4. Create a new repo in gitlab named `assignment-solution-step6` as private repo
+4. Create a new repo in gitlab named `assignment-solution-step3` as private repo
 
 5. Add your new repository reference as remote
 
