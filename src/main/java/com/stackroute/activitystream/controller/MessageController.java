@@ -53,12 +53,9 @@ public class MessageController {
 	 * Autowiring should be implemented for the MessageDAO and UserTag. Please note that 
 	 * we should not create any object using the new keyword
 	 * */
-	@Autowired
-	private MessageDAO messageDAO;
-
-	@Autowired
-	private UserTag userTag;
-
+	
+	
+	
 	/* Define a handler method which will send a message to a circle by reading the Serialized message
 	 * object from request body and save the message in message table in database. Please 
 	 * note that the loggedIn userID should be taken as the senderId for the message. 
@@ -71,23 +68,9 @@ public class MessageController {
 	 * This handler method should map to the URL "/api/message/sendMessageToCircle/{circleName}" using HTTP POST method"
 	 * where "circleName" should be replaced by the destination circle name without {} 
 	*/
-	@PostMapping("/sendMessageToCircle/{circleName}")
-	public ResponseEntity<Message> sendMessageToCircle(@PathVariable("circleName") String circleName,
-			@RequestBody Message message,HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<Message>(HttpStatus.UNAUTHORIZED);
-		}
-		message.setSenderId(loggedInUserName);
-		Boolean sendStatus = messageDAO.sendMessageToCircle(circleName, message);
-		if (sendStatus) {
-			return new ResponseEntity<Message>(HttpStatus.OK);
-		} else {
-			return new ResponseEntity<Message>(HttpStatus.INTERNAL_SERVER_ERROR);
-		}
-
-	}
-
+	
+	
+	
 	/* Define a handler method which will send a message to an individual user by reading the Serialized message
 	 * object from request body and save the message in message table in database. Please 
 	 * note that the loggedIn userID should be taken as the senderId for the message. 
@@ -100,22 +83,10 @@ public class MessageController {
 	 * This handler method should map to the URL "/api/message/sendMessageToUser/{receiverId}" using HTTP POST method"
 	 * where "receiverId" should be replaced by the recipient user name without {} 
 	*/
-	@PostMapping("/sendMessageToUser/{receiverId}")
-	public ResponseEntity<Message> sendMessageToUser(@PathVariable("receiverId") String receiverId,@RequestBody Message message,HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<Message>(HttpStatus.UNAUTHORIZED);
-		}
-		message.setSenderId(loggedInUserName);
-		Boolean sendStatus = messageDAO.sendMessageToUser(receiverId, message);
-		if (sendStatus) {
-			return new ResponseEntity<Message>(HttpStatus.OK);
-		} else {
-
-			return new ResponseEntity<Message>(HttpStatus.INTERNAL_SERVER_ERROR);
-		}
-	}
-
+	
+	
+	
+	
 	/* Define a handler method which will get all messages sent by a specific user to another specific user. Please 
 	 * note that there can be huge number of messages which has been transmitted between two users. Hence, retrieving
 	 * messages partially will help to improve performance. Pagination can be implemented here. 
@@ -131,18 +102,10 @@ public class MessageController {
 	 * and "receiverUsername" should be replaced by a valid user name without {}
 	 * and "pageNumber" should be replaced by the numeric page number that we are looking for without {}
 	*/
-	@GetMapping("/getMessagesByUser/{senderUsername}/{receiverUserName}/{pageNumber}")
-	public ResponseEntity<List<Message>> getMessagesByUser(@PathVariable("senderUsername") String senderUserName,
-			@PathVariable("receiverUserName") String receiverUserName, @PathVariable("pageNumber") int pageNumber,HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<List<Message>>(HttpStatus.UNAUTHORIZED);
-		}
-		return new ResponseEntity<List<Message>>(
-				messageDAO.getMessagesFromUserHome(senderUserName, receiverUserName, pageNumber), HttpStatus.OK);
-
-	}
-
+	
+	
+	
+	
 	/* Define a handler method which will get all messages sent to a specific circle by all users. Please 
 	 * note that there can be huge number of messages which has been transmitted to a circle. Hence, retrieving
 	 * messages partially will help to improve performance. Pagination can be implemented here. 
@@ -157,17 +120,9 @@ public class MessageController {
 	 * where "circleName" should be replaced by a valid user name without {}
 	 * and "pageNumber" should be replaced by the numeric page number that we are looking for without {}
 	*/
-	@GetMapping("/getMessagesByCircle/{circleName}/{pageNumber}")
-	public ResponseEntity<List<Message>> getMessagesByCircle(@PathVariable("circleName") String circleName,
-			@PathVariable("pageNumber") int pageNumber,HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<List<Message>>(HttpStatus.UNAUTHORIZED);
-		}
-		return new ResponseEntity<List<Message>>(messageDAO.getMessagesFromCircle(circleName, pageNumber),
-				HttpStatus.OK);
-
-	}
+	
+	
+	
 
 	/* As per our problem statement, each message can have some tags. We will learn how to extract the tags from 
 	 * the messages in future, but here we would like to define a handler method which will get all tags which has been
@@ -181,16 +136,10 @@ public class MessageController {
 	 * "/api/message/listAllTags" using HTTP GET method"
 	 
 	*/
-	@GetMapping("/listAllTags")
-	public ResponseEntity<List<String>> listAllTags(HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<List<String>>(HttpStatus.UNAUTHORIZED);
-		}
-		return new ResponseEntity<List<String>>(messageDAO.listTags(), HttpStatus.OK);
-
-	}
-
+	
+	
+	
+	
 	/* Define a handler method which will get all messages containing a specific tag. Please note that there 
 	 * can be huge number of messages which has the same tag. Hence, retrieving
 	 * messages partially will help to improve performance. Pagination can be implemented here. 
@@ -206,17 +155,9 @@ public class MessageController {
 	 * and "pageNumber" should be replaced by the numeric page number that we are looking for without {}
 	*/
 	
-	@GetMapping("/showMessagesWithTag/{tag}/{pageNumber}")
-	public ResponseEntity<List<Message>> showMessagesWithTag(@PathVariable("tag") String tag,
-			@PathVariable("pageNumber") int pageNumber,HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<List<Message>>(HttpStatus.UNAUTHORIZED);
-		}
-		return new ResponseEntity<List<Message>>(messageDAO.showMessagesWithTag(tag, pageNumber), HttpStatus.OK);
+	
 
-	}
-
+	
 	/* As per our problem statement, user can subscribe to one or more tag(s). Hence, the user will be able to see all
 	 * messages containing those tags. Define a handler method which will subscribe a specific user a specific tag. 
 	 * This handler method should return any one of the status messages basis on different
@@ -232,24 +173,10 @@ public class MessageController {
 	 * where "username" should be replaced by a valid user name without {}
 	 * and "tag" should be replaced by a valid tag without {}
 	*/
-	@PutMapping("/subscribe/{username}/{tag}")
-	public ResponseEntity<UserTag> subscribeUserToTag(@PathVariable("username") String username,
-			@PathVariable("tag") String tag,HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<UserTag>(HttpStatus.UNAUTHORIZED);
-		}
-		boolean status = messageDAO.subscribeUserToTag(username, tag);
-		if (status == false) {
-
-			return new ResponseEntity<UserTag>(HttpStatus.INTERNAL_SERVER_ERROR);
-		} else {
-
-			return new ResponseEntity<UserTag>(HttpStatus.OK);
-		}
-
-	}
-
+	
+	
+	
+	
 	/* As per our problem statement, user can unsubscribe from one or more tag(s). Define a handler method which 
 	 * will subscribe a specific user a specific tag. 
 	 * This handler method should return any one of the status messages basis on different
@@ -266,46 +193,22 @@ public class MessageController {
 	 * and "tag" should be replaced by a valid tag without {}
 	*/
 
-	@PutMapping("/unsubscribe/{username}/{tag}")
-	public ResponseEntity<UserTag> unsubscribeUserToTag(@PathVariable("username") String username,
-			@PathVariable("tag") String tag,HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<UserTag>(HttpStatus.UNAUTHORIZED);
-		}
-		boolean status = messageDAO.unsubscribeUserToTag(username, tag);
-		if (status == false) {
-
-			return new ResponseEntity<UserTag>(HttpStatus.INTERNAL_SERVER_ERROR);
-		} else {
-
-			return new ResponseEntity<UserTag>(HttpStatus.OK);
-		}
-
-	}
-
+	
+	
+	
+	
 	/* Define a handler method which will show all the subscribed tags by a specific user. 
 	 * This handler method should return any one of the status messages basis on different
 	 * situations:
 	 * 1. 200(OK) - If the user has subscribed to the tag successfully
 	 * 2. 401(UNAUTHORIZED) - If the user is not logged in
-	 * 3. (INTERNAL SERVER ERROR) - In case the user could not be subscribed. For eg: if the the user is already 
-	 *   subscribed to the tag 
 	 * 
 	 * This handler method should map to the URL 
-	 * "/api/message/subscribe/{username}/{tag}" 
+	 * "/api/message/tags/search/user/{username}" 
 	 * using HTTP GET method"
 	 * where "username" should be replaced by a valid user name without {}
-	 * and "tag" should be replaced by a valid tag without {}
 	*/
-	@GetMapping("/tags/search/user/{username}")
-	public ResponseEntity<List<String>> getMyTags(@PathVariable("username") String userId,HttpSession session) {
-		String loggedInUserName = (String) session.getAttribute("loggedInUserName");
-		if(loggedInUserName==null) {
-			return new ResponseEntity<List<String>>(HttpStatus.UNAUTHORIZED);
-		}
-		return new ResponseEntity<List<String>>(messageDAO.listMyTags(userId), HttpStatus.OK);
-
-	}
-
+	
+	
+	
 }
