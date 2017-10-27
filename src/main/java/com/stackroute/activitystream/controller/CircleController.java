@@ -29,8 +29,7 @@ import com.stackroute.activitystream.model.UserCircle;
  * format. Starting from Spring 4 and above, we can use @RestController annotation which 
  * is equivalent to using @Controller and @ResposeBody annotation
  */
-@RestController
-@RequestMapping("/api/circle")
+
 public class CircleController {
 
 	/*
