@@ -22,10 +22,22 @@ import com.stackroute.activitystream.dao.UserDAO;
 import com.stackroute.activitystream.model.Message;
 import com.stackroute.activitystream.model.User;
 
+
+/*
+ * As in this assignment, we are working with creating RESTful web service, hence annotate
+ * the class with @RestController annotation.A class annotated with @Controller annotation
+ * has handler methods which returns a view. However, if we use @ResponseBody annotation along
+ * with @Controller annotation, it will return the data directly in a serialized 
+ * format. Starting from Spring 4 and above, we can use @RestController annotation which 
+ * is equivalent to using @Controller and @ResposeBody annotation
+ */
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-
+	/*
+	 * Autowiring should be implemented for the UserDAO. 
+	 * Please note that we should not create any object using the new keyword 
+	 */
 	@Autowired
 	UserDAO userDAO;
 
