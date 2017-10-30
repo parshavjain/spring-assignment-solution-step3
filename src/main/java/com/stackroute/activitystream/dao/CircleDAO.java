@@ -15,5 +15,7 @@ public interface CircleDAO {
 	public Circle get(String circleName);
 	
 	public boolean update(Circle circle);
+	
+	public boolean delete(Circle circle);
 
 }

@@ -8,35 +8,16 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
-@Component
-@Entity
-@Table(name="user_tag")
+/*
+ * The class "UserTag" will be acting as the data model for the user_tag Table in the database. Please
+ * note that this class is annotated with @Entity annotation. Hibernate will scan all package for 
+ * any Java objects annotated with the @Entity annotation. If it finds any, then it will begin the 
+ * process of looking through that particular Java object to recreate it as a table in your database.
+ */
+
 public class UserTag {
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long userTagId;
-	private String username;
-	private String tag;
 	
-	public long getUserTagId() {
-		return userTagId;
-	}
-	public void setUserTagId(long userTagId) {
-		this.userTagId = userTagId;
-	}
-	public String getUsername() {
-		return username;
-	}
-	public void setUsername(String username) {
-		this.username = username;
-	}
-	public String getTag() {
-		return tag;
-	}
-	public void setTag(String tag) {
-		this.tag = tag;
-	}
 	
 	
 

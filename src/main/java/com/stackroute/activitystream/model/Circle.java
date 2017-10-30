@@ -6,38 +6,31 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="circle")
+/*
+ * The class "Circle" will be acting as the data model for the circle Table in the database. Please
+ * note that this class is annotated with @Entity annotation. Hibernate will scan all package for 
+ * any Java objects annotated with the @Entity annotation. If it finds any, then it will begin the 
+ * process of looking through that particular Java object to recreate it as a table in your database.
+ */
+
 public class Circle {
 
-	@Id
-	private String circleName;
-	private String creatorId;
-	private Timestamp createdDate;
-	
-	public String getCircleName() {
-		return circleName;
+	public void setCircleName(String string) {
+		// TODO Auto-generated method stub
+		
 	}
-	public void setCircleName(String circleName) {
-		this.circleName = circleName;
-	}
-	public String getCreatorId() {
-		return creatorId;
-	}
-	public void setCreatorId(String creatorId) {
-		this.creatorId = creatorId;
-	}
-	public Timestamp getCreatedDate() {
-		return createdDate;
-	}
+
 	public void setCreatedDate() {
-		this.createdDate = setCurrentDate();
+		// TODO Auto-generated method stub
+		
 	}
-	
-	public Timestamp setCurrentDate()
-	{
-		return new Timestamp(System.currentTimeMillis());
+
+	public void setCreatorId(String string) {
+		// TODO Auto-generated method stub
+		
 	}
-	
+
+
+
 	
 }
