@@ -30,17 +30,7 @@ public class UserCircleDAOImpl implements UserCircleDAO{
 	/*
 	 * Autowiring should be implemented for the SessionFactory. 
 	 */
-	@Autowired
-	private SessionFactory sessionFactory;
-
-	public UserCircleDAOImpl(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-
-	private Session getCurrentSession() {
-		return sessionFactory.getCurrentSession();
-	}
-	
+		
 	
 	/*
 	 * Add a user to a circle 

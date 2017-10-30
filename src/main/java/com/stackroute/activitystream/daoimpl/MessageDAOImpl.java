@@ -34,39 +34,27 @@ import com.stackroute.activitystream.model.UserTag;
 @Transactional
 public class MessageDAOImpl implements MessageDAO {
 
-	private static int pageSize = 8;
+	
 
 	/*
 	 * Autowiring should be implemented for the SessionFactory. 
 	 */
-	@Autowired
-	private SessionFactory sessionFactory;
+	
 
 	/*
 	 * Autowiring should be implemented for CircleDAO 
 	 */
-	@Autowired
-	private CircleDAO circleDAO;
+	
 	
 	/*
 	 * Autowiring should be implemented for UserDAO. 
 	 */
-	@Autowired
-	private UserDAO userDAO;
+	
 	
 	/*
 	 * Autowiring should be implemented for UserCircleDAO. 
 	 */
-	@Autowired
-	private UserCircleDAO userCircleDAO;
-
-	public MessageDAOImpl(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-
-	private Session getCurrentSession() {
-		return sessionFactory.getCurrentSession();
-	}
+	
 
 	/*
 	 * Retrieve messages from a specific circle. For improved performace, we will

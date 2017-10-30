@@ -27,18 +27,7 @@ public class UserDAOImpl implements UserDAO{
 	/*
 	 * Autowiring should be implemented for the SessionFactory. 
 	 */
-	@Autowired
-	private SessionFactory sessionFactory;
 	
-	public UserDAOImpl(SessionFactory sessionFactory)
-	{
-		this.sessionFactory=sessionFactory;
-	}
-	
-	private Session getCurrentSession()
-	{
-		return sessionFactory.getCurrentSession();
-	}
 
 	
 	/*
