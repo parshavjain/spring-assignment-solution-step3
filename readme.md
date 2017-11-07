@@ -24,6 +24,16 @@ and send messages to various circle created. Also, we will perform authenticatio
 
 ### Following are the broad tasks:
 
+Following are the broad tasks:
+ 
+ - Create a new user, retrieve all users, retrieve a single user, update the user.
+ - login using username and password, log out using userID.
+ - Create a circle, get all circles,  get all circles which match the search keyword.
+ - Add user to a circle, remove a user from a circle, retrieve circle for a specific user.
+ - Send message to circle, Send message to users, Retrieve message from users, Retrieve message from circles, Retrieve all tags, 
+      Retrieve messages containing a specific tag, Subscribe a user to stream containing a specific tag, Unsubscribe a user from a stream containing a specific tag, 
+      Retrieve the set of tags subscribed by a specific user.
+
 ### Project structure
 
 The folders and files you see in this repositories, is how it is expected to be in projects, which are submitted for automated evaluation by Hobbes
