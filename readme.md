@@ -24,8 +24,6 @@ and send messages to various circle created. Also, we will perform authenticatio
 
 ### Following are the broad tasks:
 
-Following are the broad tasks:
- 
  - Create a new user, retrieve all users, retrieve a single user, update the user.
  - login using username and password, log out using userID.
  - Create a circle, get all circles,  get all circles which match the search keyword.
