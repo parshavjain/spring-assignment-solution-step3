@@ -19,8 +19,8 @@ and send messages to various circle created. Also, we will perform authenticatio
 
 ### Solution Step
 
-Step 1: Configure Postman in your Google Chrome
-Step 2: Use URI's mentioned in the controller to check all the expected operations using Postman.
+        Step 1: Configure Postman in your Google Chrome
+        Step 2: Use URI's mentioned in the controller to check all the expected operations using Postman.
 
 ### Following are the broad tasks:
 
