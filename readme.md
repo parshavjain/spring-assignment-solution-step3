@@ -15,7 +15,7 @@ Resources are manipulated using a fixed set of four create, read, update, delete
 ### Problem Statement
 
 In this case study, we will develop a RESTful application with which we will register a user, create a circle and delete a circle, add users to the circle, 
-and send messages to various circle created. Also, we will perform authentication like login and log out. All these operations will be tested with the help of Postman API.
+and send messages to various circle created. Also, we will perform authentication like login and log out. Check the performance of the operations with the help of Postman API.
 
 ### Solution Step
 
