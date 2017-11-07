@@ -32,7 +32,7 @@ and send messages to various circle created. Also, we will perform authenticatio
       Retrieve messages containing a specific tag, Subscribe a user to stream containing a specific tag, Unsubscribe a user from a stream containing a specific tag, 
       Retrieve the set of tags subscribed by a specific user.
 
-Steps to be followed:
+### Steps to be followed:
 
     Step 1: Clone the boilerplate in a specific folder on your local machine and import the same in your eclipse STS.
     Step 2: Add relevant dependencies in pom.xml file. 
