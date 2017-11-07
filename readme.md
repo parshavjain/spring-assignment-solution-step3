@@ -1,9 +1,26 @@
 ## Seed code - Boilerplate for step 3 - Activity Stream Assignment
 
+### Assignment Step Description
+
+In this Case study: Activity Stream Step 3, we will create a RESTful application. 
+
+Representational State Transfer (REST) is an architectural style that specifies constraints. 
+In the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web.
+
+Resources are manipulated using a fixed set of four create, read, update, delete operations: PUT, GET, POST, and DELETE. 
+ - PUT creates a new resource, which can be then deleted by using DELETE. 
+ - GET retrieves the current state of a resource in some representation. 
+ - POST transfers a new state onto a resource. 
+
 ### Problem Statement
 
+In this case study, we will develop a RESTful application with which we will register a user, create a circle and delete a circle, add users to the circle, 
+and send messages to various circle created. Also, we will perform authentication like login and log out. All these operations will be tested with the help of Postman API.
 
-### Expected solution
+### Solution Step
+
+Step 1: Configure Postman in your Google Chrome
+Step 2: Use URI's mentioned in the controller to check all the expected operations using Postman.
 
 ### Following are the broad tasks:
 
