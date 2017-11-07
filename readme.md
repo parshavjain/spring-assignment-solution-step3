@@ -32,6 +32,20 @@ and send messages to various circle created. Also, we will perform authenticatio
       Retrieve messages containing a specific tag, Subscribe a user to stream containing a specific tag, Unsubscribe a user from a stream containing a specific tag, 
       Retrieve the set of tags subscribed by a specific user.
 
+Steps to be followed:
+
+    Step 1: Clone the boilerplate in a specific folder on your local machine and import the same in your eclipse STS.
+    Step 2: Add relevant dependencies in pom.xml file. 
+        Note: Read the comments mentioned in pom.xml file for identifying the relevant dependencies.
+    Step 3: In ApplicationContextConfig.java add the required annotations, as well as add base packages to scan in @componentScan Annotation. Define the bean for DataSource, SessionFactory and Transaction Manager.
+    Step 4: Specify Root config class in WebApplicationInitializer.java file.
+    Step 5: In DataModel classes, annotate these classes with @Entity Annotation and add the @Id annotation to specify the primary key for the table.
+    Step 6: Read all the methods mentioned in the DAO interface.
+    Step 7: Provide the implementation for all the methods of DAO interface in DaoImpl. These classes have to be annotated with @Repository and @Transactional.
+    Step 8: Write controllers to work with RESTful web services ( hence annotate the class with @RestController). These controllers provide logic to implement respective functionalities.
+    Step 9: Test each and every controller with appropriate test cases.
+    Step 10: Check all the functionalities using URI's mentioned in the controllers with the help of Postman for final output.
+
 ### Project structure
 
 The folders and files you see in this repositories, is how it is expected to be in projects, which are submitted for automated evaluation by Hobbes
