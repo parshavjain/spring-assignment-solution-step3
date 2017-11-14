@@ -1,7 +1,8 @@
-package com.stackroute.activitystream.test;
+package com.stackroute.activitystream.commander;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.Spring;
@@ -24,25 +25,33 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import com.stackroute.activitystream.config.ApplicationContextConfig;
 import com.stackroute.activitystream.dao.CircleDAO;
 import com.stackroute.activitystream.dao.MessageDAO;
+import com.stackroute.activitystream.dao.UserCircleDAO;
 import com.stackroute.activitystream.dao.UserDAO;
 import com.stackroute.activitystream.model.Circle;
 import com.stackroute.activitystream.model.Message;
 import com.stackroute.activitystream.model.User;
+import com.stackroute.activitystream.model.UserCircle;
 
 @RunWith(SpringRunner.class)
 @WebAppConfiguration
 @Transactional
 @ContextConfiguration(classes = { ApplicationContextConfig.class })
-public class CircleTest {
+public class UserCircleTest {
 
 	@Autowired
 	private UserDAO userDAO;
+	
+	@Autowired
+	UserCircleDAO userCircleDAO;
 
 	@Autowired
 	private CircleDAO circleDAO;
 
 	@Autowired
 	private Circle circle;
+	
+	@Autowired
+	private UserCircle userCircle;
 
 	@Before
 	public void setup() {
@@ -79,57 +88,54 @@ public class CircleTest {
 	}
 
 	@Test
-	public void testCreateCircle() {
+	public void testAddUserToCircle() {
 
-		circle.setCircleName("Angular");
-		circle.setCreatedDate();
-		circle.setCreatorId("john");
-		circleDAO.save(circle);
-		assertNotNull("Creating of circle failed.", circleDAO.get("Angular"));
-		circleDAO.delete(circle);
-	}
-
-	@Test
-	public void testCreateCircleInvalidCreatorFailure() {
-
-		circle.setCircleName("Angular");
-		circle.setCreatedDate();
-		circle.setCreatorId("chris");
-		assertNotEquals("Creation of circle with invalid creatorID successful", true, circleDAO.save(circle));
-		circleDAO.delete(circle);
-	}
-
-	@Test
-	public void testCreateCircleDuplicateFailure() {
-
-		circle.setCircleName("Java");
-		circle.setCreatedDate();
-		circle.setCreatorId("john");
-		assertNotEquals("Creation of circle with the same name as of an existing circle successful", true,
-				circleDAO.save(circle));
-		circleDAO.delete(circle);
-	}
-
-	@Test
-	public void testGetAllCircles() {
-
-		assertNotNull("Creation of circle with the same name as of an existing circle successful",
-				circleDAO.getAllCircles());
+		assertEquals("Adding user to circle failed",true,userCircleDAO.addUser("john", "Java"));
 		
 	}
 	
 	@Test
-	public void testGetAllCirclesWithSearchString() {
+	public void testAddUserToCircleInvalidUserFailure() {
 
-		assertNotNull("Retrieval of all circles unsuccessful",
-				circleDAO.getAllCircles("Java"));
+		assertEquals("Adding user to circle failed",false,userCircleDAO.addUser("chris", "Java"));
+		
+	}
+
+	@Test
+	public void testAddUserToCircleInvalidCircleFailure() {
+
+		assertEquals("Adding user to circle failed",false,userCircleDAO.addUser("john", "Spring"));
+		
 	}
 	
 	@Test
-	public void testGetAllCirclesWithSearchStringFailure() {
+	public void testRemoveUserFromCircle() {
+		userCircleDAO.addUser("john", "Java");
+		assertEquals("Removing user from circle failed",true,userCircleDAO.removeUser("john", "Java"));
+		
+	}
+	
+	@Test
+	public void testRemoveUserFromCircleInvalidUserFailure() {
 
-		assertNotNull("Retrieval of all circles containing a Search String unsuccessful",
-				circleDAO.getAllCircles("Spring"));
+		assertEquals("Removing user from circle failed",false,userCircleDAO.removeUser("chris", "Java"));
+		
+	}
+
+	@Test
+	public void testRemoveUserFromCircleInvalidCircleFailure() {
+
+		assertEquals("Removing user from circle failed",false,userCircleDAO.removeUser("john", "Spring"));
+		
+	}
+	
+	@Test
+	public void testUserSubscriptionToCircle() {
+		userCircleDAO.addUser("john", "Java");
+		List<String> userSubscription=new ArrayList<String>();
+		userSubscription.add("Java");
+		assertEquals("Removing user from circle failed",userSubscription,userCircleDAO.getMyCircles("john"));
+		
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.stackroute.activitystream.test;
+package com.stackroute.activitystream.commander;
 
 import static org.junit.Assert.*;
 

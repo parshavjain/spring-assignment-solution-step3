@@ -8,7 +8,7 @@ public interface MessageDAO {
 		
 		public List<Message> getMessagesFromCircle(String circleName,int pageNumber); 
 		
-		public List<Message> getMessagesFromUserHome(String username,String otherUsername,int pageNumber);
+		public List<Message> getMessagesFromUser(String username,String otherUsername,int pageNumber);
 		
 		public List<Message> getMessages(String username,int pageNumber); 
 		

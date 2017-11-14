@@ -71,7 +71,7 @@ public class MessageDAOImpl implements MessageDAO {
 	 * recipient. For improved performace, we will implement retrieving the 
 	 * messages partially by implementing pagination
 	 */
-	public List<Message> getMessagesFromUserHome(String username, String otherUsername, int pageNumber) {
+	public List<Message> getMessagesFromUser(String username, String otherUsername, int pageNumber) {
 		// TODO Auto-generated method stub
 		return null;
 	}
