@@ -17,7 +17,12 @@ import org.springframework.stereotype.Component;
 
 public class UserTag {
 	
-	
+	/*
+	 * This class should have three fields
+	 * (userTagId,username,tag). Out of these three fields, the
+	 * field userTagId should be the primary key and should be generated. This class 
+	 * should also contain the getters and setters for the fields. 
+	 */
 	
 	
 

@@ -18,6 +18,20 @@ import javax.persistence.Table;
 
 public class Message {
 
+	/*
+	 * This class should have eight fields
+	 * (messageId,senderName,receiverId,circleName,postedDate,streamType,message,tag). Out of these four fields, the
+	 * field messageId should be auto-generated. This class should also contain
+	 * the getters and setters for the fields. The value of postedDate should
+	 * not be accepted from the user but should be always initialized with the
+	 * system date
+	 */
+	
+	public Message(String string, Object object, Object object2, Object object3, String string2, String string3,
+			Object object4) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void setMessage(String string) {
 		// TODO Auto-generated method stub
 		

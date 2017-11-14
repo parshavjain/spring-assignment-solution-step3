@@ -13,6 +13,21 @@ import javax.persistence.Table;
 
 public class User {
 
+	/*
+	 * This class should have three fields
+	 * (username,name,password). Out of these three fields, the
+	 * field username should be the primary key. This class should also contain
+	 * the getters and setters for the fields.
+	 */
+	
+	public User(String string, String string2, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void setName(String string) {
 		// TODO Auto-generated method stub
 		

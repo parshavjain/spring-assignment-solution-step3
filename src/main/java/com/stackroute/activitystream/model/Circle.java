@@ -15,6 +15,23 @@ import javax.persistence.Table;
 
 public class Circle {
 
+	/*
+	 * This class should have three fields
+	 * (circleName,creatorId,createdDate). Out of these three fields, the
+	 * field circleName should be the primary key. This class should also contain
+	 * the getters and setters for the fields. The value of createdDate should
+	 * not be accepted from the user but should be always initialized with the
+	 * system date
+	 */
+	
+	public Circle(String string, String string2, Timestamp timestamp) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Circle() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void setCircleName(String string) {
 		// TODO Auto-generated method stub
 		
@@ -28,6 +45,11 @@ public class Circle {
 	public void setCreatorId(String string) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public String getCircleName() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

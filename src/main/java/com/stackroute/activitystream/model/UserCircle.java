@@ -18,5 +18,16 @@ import org.springframework.stereotype.Component;
 
 public class UserCircle {
 
+	/*
+	 * This class should have three fields
+	 * (userCircleId,username,circleName). Out of these three fields, the
+	 * field userCircleId should be the primary key and should be generated. This class 
+	 * should also contain the getters and setters for the fields. 
+	 */
+	
+	public UserCircle(String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	
 }
