@@ -1,8 +1,8 @@
 {
   "workflow": "OpenJDK8SpringMySQLApp",
   "scores": {
-    "commanderTests":30,
-    "cadetTests":30, 
-    "pmd": 40
+    "commanderTests":40,
+    "cadetTests":40,
+    "pmd": 20
   }
 }

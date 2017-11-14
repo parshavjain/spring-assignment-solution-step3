@@ -1,11 +1,50 @@
 ## Seed code - Boilerplate for step 3 - Activity Stream Assignment
 
+### Assignment Step Description
+
+In this Case study: Activity Stream Step 3, we will create a RESTful application. 
+
+Representational State Transfer (REST) is an architectural style that specifies constraints. 
+In the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web.
+
+Resources are manipulated using a fixed set of four create, read, update, delete operations: PUT, GET, POST, and DELETE. 
+ - PUT creates a new resource, which can be then deleted by using DELETE. 
+ - GET retrieves the current state of a resource in some representation. 
+ - POST transfers a new state onto a resource. 
+
 ### Problem Statement
 
+In this case study, we will develop a RESTful application with which we will register a user, create a circle and delete a circle, add users to the circle, 
+and send messages to various circle created. Also, we will perform authentication like login and log out. Check the performance of the operations with the help of Postman API.
 
-### Expected solution
+### Solution Step
+
+        Step 1: Configure Postman in your Google Chrome
+        Step 2: Use URI's mentioned in the controller to check all the expected operations using Postman.
 
 ### Following are the broad tasks:
+
+ - Create a new user, retrieve all users, retrieve a single user, update the user.
+ - Login using username and password, log out using userID.
+ - Create a circle, get all circles,  get all circles which match the search keyword.
+ - Add user to a circle, remove a user from a circle, retrieve circle for a specific user.
+ - Send message to circle, Send message to users, Retrieve message from users, Retrieve message from circles, Retrieve all tags, 
+      Retrieve messages containing a specific tag, Subscribe a user to stream containing a specific tag, Unsubscribe a user from a stream containing a specific tag, 
+      Retrieve the set of tags subscribed by a specific user.
+
+### Steps to be followed:
+
+    Step 1: Clone the boilerplate in a specific folder on your local machine and import the same in your eclipse STS.
+    Step 2: Add relevant dependencies in pom.xml file. 
+        Note: Read the comments mentioned in pom.xml file for identifying the relevant dependencies.
+    Step 3: In ApplicationContextConfig.java add the required annotations, as well as add base packages to scan in @componentScan Annotation. Define the bean for DataSource, SessionFactory and Transaction Manager.
+    Step 4: Specify Root config class in WebApplicationInitializer.java file.
+    Step 5: In DataModel classes, annotate these classes with @Entity Annotation and add the @Id annotation to specify the primary key for the table.
+    Step 6: Read all the methods mentioned in the DAO interface.
+    Step 7: Provide the implementation for all the methods of DAO interface in DaoImpl. These classes have to be annotated with @Repository and @Transactional.
+    Step 8: Write controllers to work with RESTful web services ( hence annotate the class with @RestController). These controllers provide logic to implement respective functionalities.
+    Step 9: Test each and every controller with appropriate test cases.
+    Step 10: Check all the functionalities using URI's mentioned in the controllers with the help of Postman for final output.
 
 ### Project structure
 
@@ -14,30 +53,36 @@ The folders and files you see in this repositories, is how it is expected to be 
     Project
 	|
 	├── com.stackroute.activitystream.config	           
-	|	    └── ApplicationContextConfig.java
-	|	    └── WebApplicationInitializer.java
+	|	    └── ApplicationContextConfig.java     // This class will contain the application-context for the application.
+	|	    └── WebApplicationInitializer.java    // This class WebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer class.
 	├── com.stackroute.activitystream.controller
-	|		└── CircleController.java 
-	|		└── MessageController.java 
-	|		└── UserAuthController.java 
-	|		└── UserCircleController.java 
-	|		└── UserController.java 
+	|		└── CircleController.java           // This class is responsible for processing all requests related to Circle and builds an appropriate model and passes it to the view for rendering.
+	|		└── MessageController.java          // This class is responsible for processing all requests related to Message and builds an appropriate model and passes it to the view for rendering.
+	|		└── UserAuthController.java         // This class is responsible for processing all requests related to UserAuthController and builds an appropriate model and passes it to the view for rendering.
+	|		└── UserCircleController.java       // This class is responsible for processing all requests related to UserCircleController and builds an appropriate model and passes it to the view for rendering.
+	|		└── UserController.java             // This class is responsible for processing all requests related to UserController and builds an appropriate model and passes it to the view for rendering.
 	├── com.stackroute.activitystream.dao
-	|		└── CircleDAO.java
-	|		└── MessageDAO.java
-	|		└── UserCircleDAO.java
-	|		└── UserDAO.java
+	|		└── CircleDAO.java                  // This interface contains all the behaviours of Circle Model
+	|		└── MessageDAO.java                 // This interface contains all the behaviours of Message Model    
+	|		└── UserCircleDAO.java              // This interface contains all the behaviours of UserCircle Model
+	|		└── UserDAO.java                    // This interface contains all the behaviours of User Model
 	├── com.stackroute.activitystream.daoimpl
-	|		└── CircleDAOImpl.java
-	|		└── MessageDAOImpl.java
-	|		└── UserCircleDAOImpl.java
-	|		└── UserDAOImpl.java
+	|		└── CircleDAOImpl.java              // This class implements the CircleDAO interface. This class has to be annotated with @Repository annotation.
+	|		└── MessageDAOImpl.java             // This class implements the MessageDAO interface. This class has to be annotated with @Repository annotation.
+	|		└── UserCircleDAOImpl.java          // This class implements the UserCircleDAO interface. This class has to be annotated with @Repository annotation.
+	|		└── UserDAOImpl.java                // This class implements the UserDAO interface. This class has to be annotated with @Repository annotation.
 	├── com.stackroute.activitystream.model
-	|		└── Circle.java
-	|		└── Message.java
-	|		└── User.java
-	|		└── UserCircle.java
-	|		└── UserTag.java
+	|		└── Circle.java                     // This class will be acting as the data model for the circle Table in the database.
+	|		└── Message.java                    // This class will be acting as the data model for the message Table in the database.
+	|		└── User.java                       // This class will be acting as the data model for the user Table in the database.
+	|		└── UserCircle.java                 // This class will be acting as the data model for the user_circle Table in the database.
+	|		└── UserTag.java                    // This class will be acting as the data model for the user_tag Table in the database.
+	├── com.stackroute.activitystream.test      // All the test case classes are made available in this package
+	|		└── CircleTest.java
+	|		└── MessageTest.java  
+	|		└── UserAuthTest.java 
+	|		└── UserCircleTest.java
+	|		└── UserTest.java      
 	├── .classpath			                    // This file is generated automatically while creating the project in eclipse
 	├── .hobbes   			                    // Hobbes specific config options, such as type of evaluation schema, type of tech stack etc., Have saved a default values for convenience
 	├── .project			                    // This is automatically generated by eclipse, if this file is removed your eclipse will not recognize this as your eclipse project. 
