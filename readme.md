@@ -37,14 +37,15 @@ and send messages to various circle created. Also, we will perform authenticatio
     Step 1: Clone the boilerplate in a specific folder on your local machine and import the same in your eclipse STS.
     Step 2: Add relevant dependencies in pom.xml file. 
         Note: Read the comments mentioned in pom.xml file for identifying the relevant dependencies.
-    Step 3: In ApplicationContextConfig.java add the required annotations, as well as add base packages to scan in @componentScan Annotation. Define the bean for DataSource, SessionFactory and Transaction Manager.
-    Step 4: Specify Root config class in WebApplicationInitializer.java file.
-    Step 5: In DataModel classes, annotate these classes with @Entity Annotation and add the @Id annotation to specify the primary key for the table.
-    Step 6: Read all the methods mentioned in the DAO interface.
-    Step 7: Provide the implementation for all the methods of DAO interface in DaoImpl. These classes have to be annotated with @Repository and @Transactional.
-    Step 8: Write controllers to work with RESTful web services ( hence annotate the class with @RestController). These controllers provide logic to implement respective functionalities.
-    Step 9: Test each and every controller with appropriate test cases.
-    Step 10: Check all the functionalities using URI's mentioned in the controllers with the help of Postman for final output.
+    Step 3: Create Environment Variable thru script file (.sh for Linux & .bat for Windows). 
+    Step 4: Implement ApplicationContextConfig.java 
+    Step 5: Specify Root config class in WebApplicationInitializer.java file.
+    Step 6: Define the data model classes (User, UserCircle, UserTag, Circle, Message)
+    Step 7: See the methods mentioned in the DAO interface.
+    Step 8: Implementation all the methods of DAO interface in DaoImpl.
+    Step 9: Write controllers to work with RESTful web services. 
+    Step 10: Test each and every controller with appropriate test cases.
+    Step 11: Check all the functionalities using URI's mentioned in the controllers with the help of Postman for final output.
 
 ### Project structure
 
