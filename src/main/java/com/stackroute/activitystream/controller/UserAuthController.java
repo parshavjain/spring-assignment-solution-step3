@@ -41,7 +41,7 @@ public class UserAuthController {
 	 * This handler method should return any one of the status messages basis on different
 	 * situations:
 	 * 1. 200(OK) - If login is successful
-	 * 2. 500(INTERNAL SERVER ERROR) - If login is not successful
+	 * 2. 401(UNAUTHORIZED) - If login is not successful
 	 * 
 	 * This handler method should map to the URL "/api/authenticate" using HTTP POST method
 	*/
