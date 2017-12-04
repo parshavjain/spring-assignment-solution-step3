@@ -86,7 +86,7 @@ public class UserController {
 	 * 2. 404(NOT FOUND) - If the user with specified username is not found
 	 * 3. (UNAUTHORIZED) - If the user trying to perform the action has not logged in
 	 * 
-	 * This handler method should map to the URL "/api/user" using HTTP PUT method
+	 * This handler method should map to the URL "/api/user/{username}" using HTTP PUT method
 	*/
 	
 }
