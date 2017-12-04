@@ -34,7 +34,7 @@ public class CircleController {
 
 	/*
 	 * From the problem statement, we can understand that the application	
-	 * requires us to implement two functionalities regarding circles. They are as following:
+	 * requires us to implement three functionalities regarding circles. They are as following:
 	 * 
 	 * 1. Create a circle 
 	 * 2. Get all circles
@@ -54,7 +54,7 @@ public class CircleController {
 	
 	
 	/* Define a handler method which will create a circle by reading the Serialized circle
-	 * object from request body and save the circle in message table in database. Please 
+	 * object from request body and save the circle in circle table in database. Please 
 	 * note that the circleName has to be unique and the loggedIn userID should be taken as
 	 * the creatorId for the circle. 
 	 * This handler method should return any one of the status messages basis on different
