@@ -32,7 +32,7 @@ public class MessageController {
 
 	/*
 	 * From the problem statement, we can understand that the application	 requires us to 
-	 * implement two functionalities regarding circles. They are as following:
+	 * implement nine functionalities regarding circles. They are as following:
 	 * 
 	 * 1. Send message to circle 
 	 * 2. Send message to users
@@ -169,7 +169,7 @@ public class MessageController {
 	 * 
 	 * This handler method should map to the URL 
 	 * "/api/message/subscribe/{username}/{tag}" 
-	 * using HTTP GET method"
+	 * using HTTP PUT method"
 	 * where "username" should be replaced by a valid user name without {}
 	 * and "tag" should be replaced by a valid tag without {}
 	*/
@@ -178,7 +178,7 @@ public class MessageController {
 	
 	
 	/* As per our problem statement, user can unsubscribe from one or more tag(s). Define a handler method which 
-	 * will subscribe a specific user a specific tag. 
+	 * will unsubscribe a specific user from a specific tag. 
 	 * This handler method should return any one of the status messages basis on different
 	 * situations:
 	 * 1. 200(OK) - If the user has unsubscribed from the tag successfully
@@ -188,7 +188,7 @@ public class MessageController {
 	 * 
 	 * This handler method should map to the URL 
 	 * "/api/message/unsubscribe/{username}/{tag}" 
-	 * using HTTP GET method"
+	 * using HTTP PUT method"
 	 * where "username" should be replaced by a valid user name without {}
 	 * and "tag" should be replaced by a valid tag without {}
 	*/
