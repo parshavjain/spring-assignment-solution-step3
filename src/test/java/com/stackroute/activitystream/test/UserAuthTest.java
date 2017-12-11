@@ -34,12 +34,6 @@ import com.stackroute.activitystream.model.User;
 public class UserAuthTest {
 
 	@Autowired
-	private MessageDAO messageDAO;
-
-	@Autowired
-	private Message message;
-
-	@Autowired
 	private UserDAO userDAO;
 
 	@Autowired
