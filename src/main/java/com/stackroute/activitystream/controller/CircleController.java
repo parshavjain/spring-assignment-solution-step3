@@ -48,7 +48,7 @@ public class CircleController {
 	
 	
 	/*
-	 * Autowiring should be implemented for the CircleDAO and UserCircle. Please note that 
+	 * Autowiring should be implemented for the CircleDAO. Please note that 
 	 * we should not create any object using the new keyword
 	 * */
 	
