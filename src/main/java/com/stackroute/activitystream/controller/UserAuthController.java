@@ -3,12 +3,14 @@ package com.stackroute.activitystream.controller;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.stackroute.activitystream.dao.UserDAO;
@@ -23,13 +25,16 @@ import com.stackroute.activitystream.model.User;
  * format. Starting from Spring 4 and above, we can use @RestController annotation which 
  * is equivalent to using @Controller and @ResposeBody annotation
  */
-
+@RestController 
 public class UserAuthController {
 
 	/*
 	 * Autowiring should be implemented for the UserDAO. Please note that 
 	 * we should not create any object using the new keyword 
 	 */
+	@Autowired
+	@Qualifier("userDAO")
+	private UserDAO userDAO;
 	
 	
 	
@@ -45,7 +50,27 @@ public class UserAuthController {
 	 * 
 	 * This handler method should map to the URL "/api/authenticate" using HTTP POST method
 	*/
-
+	@RequestMapping(value="/api/authenticate", method = RequestMethod.POST)
+	public ResponseEntity<User> validate(@RequestBody User user, HttpSession session) {
+		//null empty check.
+		if (null == user || null == user.getPassword() || null == user.getUserName() || user.getUserName().isEmpty()
+				|| user.getPassword().isEmpty()) {
+			return new ResponseEntity<User>(HttpStatus.UNAUTHORIZED);
+		}
+		
+		//Validating username and password.
+		//Service call.
+		boolean success = userDAO.validate(user.getUserName(), user.getPassword());
+		
+		//Login success
+		if(success) {
+			session.setAttribute("userName", user.getUserName());
+			return new ResponseEntity<User>(HttpStatus.OK);
+		}
+		
+		//Login failed
+		return new ResponseEntity<User>(HttpStatus.UNAUTHORIZED);
+	}
 	
 	
 
@@ -57,7 +82,11 @@ public class UserAuthController {
 	 * 
 	 * This handler method should map to the URL "/api/logout" using HTTP PUT method
 	*/ 
-	
+	public ResponseEntity<User> logout(HttpSession session) {
+		session.removeAttribute("userName");
+		session.invalidate();
+		return new ResponseEntity<User>(HttpStatus.OK); 
+	}
 
 
 }

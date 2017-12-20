@@ -1,8 +1,11 @@
 package com.stackroute.activitystream.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
 
 /*
  * The class "User" will be acting as the data model for the user Table in the database. Please
@@ -14,6 +17,9 @@ import javax.persistence.Table;
  * to autowire the class from any other components of the application
  */
 
+@Entity
+@Component
+@Table(name = "USER")
 public class User {
 
 	/*
@@ -23,8 +29,20 @@ public class User {
 	 * the getters and setters for the fields.
 	 */
 	
-	public User(String string, String string2, String string3) {
-		// TODO Auto-generated constructor stub
+	@Id
+	@Column(name = "userName", nullable = false)
+	private String userName;
+	
+	@Column(name = "name", nullable = false)
+	private String name;
+	
+	@Column(name = "password", nullable = false)
+	private String password;
+	
+	public User(String userName, String name, String password) {
+		this.userName = userName;
+		this.name = name;
+		this.password = password;
 	}
 
 	public User() {
@@ -32,23 +50,42 @@ public class User {
 	}
 
 	public void setName(String string) {
-		// TODO Auto-generated method stub
+		this.name = string;
 		
 	}
 
 	public void setPassword(String string) {
-		// TODO Auto-generated method stub
-		
+		this.password = password;		
 	}
 
 	public void setUsername(String string) {
-		// TODO Auto-generated method stub
+		this.userName = string;
 		
 	}
 
 	public String getPassword() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.password;
+	}
+
+	/**
+	 * @return the userName
+	 */
+	public String getUserName() {
+		return userName;
+	}
+
+	/**
+	 * @param userName the userName to set
+	 */
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
 	}
 
 	
