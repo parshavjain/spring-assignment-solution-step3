@@ -71,7 +71,9 @@ public class UserCircleDAOImpl implements UserCircleDAO {
 			}
 			
 			UserCircle userCircle = new UserCircle(userName, circleName);
+			sessionFactory.getCurrentSession().clear();
 			sessionFactory.getCurrentSession().save(userCircle);
+			sessionFactory.getCurrentSession().flush();
 			return true;
 		} catch (Exception e) {
 			return false;

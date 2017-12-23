@@ -41,7 +41,9 @@ public class UserDAOImpl implements UserDAO{
 	public boolean save(User user) {
 		boolean success = false;
 		if(null != user) {
+			sessionFactory.getCurrentSession().clear();
 			sessionFactory.getCurrentSession().saveOrUpdate(user);
+			sessionFactory.getCurrentSession().flush();
 			success = true;
 		}
 		return success;
@@ -53,7 +55,9 @@ public class UserDAOImpl implements UserDAO{
 	public boolean update(User user) {
 		boolean success = false;
 		if(null != user) {
+			sessionFactory.getCurrentSession().clear();
 			sessionFactory.getCurrentSession().update(user);
+			sessionFactory.getCurrentSession().flush();
 			success = true;
 		}
 		return success;

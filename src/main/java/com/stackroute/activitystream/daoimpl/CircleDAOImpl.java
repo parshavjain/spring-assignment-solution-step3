@@ -64,7 +64,9 @@ public class CircleDAOImpl implements CircleDAO {
 				if (null != tempCircle) {
 					return success;
 				}
+				sessionFactory.getCurrentSession().clear();
 					sessionFactory.getCurrentSession().save(circle);
+					sessionFactory.getCurrentSession().flush();
 					success = true;
 			}
 
@@ -80,7 +82,9 @@ public class CircleDAOImpl implements CircleDAO {
 	public boolean update(Circle circle) {
 		boolean success = false;
 		if (null != circle) {
+			sessionFactory.getCurrentSession().clear();
 			sessionFactory.getCurrentSession().update(circle);
+			sessionFactory.getCurrentSession().flush();
 			success = true;
 		}
 		return success;

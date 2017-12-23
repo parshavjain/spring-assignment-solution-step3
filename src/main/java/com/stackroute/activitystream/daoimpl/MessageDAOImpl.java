@@ -135,7 +135,9 @@ public class MessageDAOImpl implements MessageDAO {
 						return false;
 					}
 					message.setCircleName(circleName);
+					sessionFactory.getCurrentSession().clear();
 					sessionFactory.getCurrentSession().save(message);
+					sessionFactory.getCurrentSession().flush();
 					return true;
 				}
 			}
@@ -161,7 +163,9 @@ public class MessageDAOImpl implements MessageDAO {
 						return false;
 					}
 					message.setReceiverId(username);
+					sessionFactory.getCurrentSession().clear();
 					sessionFactory.getCurrentSession().save(message);
+					sessionFactory.getCurrentSession().flush();
 					return true;
 				}
 			}
@@ -225,7 +229,9 @@ public class MessageDAOImpl implements MessageDAO {
 			UserTag userTag = new UserTag();
 			userTag.setTag(tag);
 			userTag.setUserName(userName);
+			sessionFactory.getCurrentSession().clear();
 			sessionFactory.getCurrentSession().save(userTag);
+			sessionFactory.getCurrentSession().flush();
 			return true;
 		}
 		return false;
