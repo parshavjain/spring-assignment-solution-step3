@@ -1,5 +1,6 @@
 package com.stackroute.activitystream.config;
 
+import java.sql.Timestamp;
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -14,8 +15,6 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.springframework.web.servlet.view.JstlView;
 
 import com.stackroute.activitystream.dao.CircleDAO;
 import com.stackroute.activitystream.dao.MessageDAO;
@@ -60,22 +59,22 @@ public class ApplicationContextConfig {
 	 * 4. Password
 	 */
 	@Bean(name = "dataSource")
-	public DataSource getDataSource() {
+	/*public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://localhost:3306/activitystream_step3");
 	    dataSource.setUsername("root");
 	    dataSource.setPassword("P@ssw0rd");
 	    return dataSource;
-	}
-	/*public DataSource getDataSource() {
+	}*/
+	public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://localhost:3306/${MYSQL_DATABASE}");
 	    dataSource.setUsername("${MYSQL_USER}");
 	    dataSource.setPassword("${MYSQL_PASSWORD}");
 	    return dataSource;
-	}*/
+	}
 	
 	
 	/**

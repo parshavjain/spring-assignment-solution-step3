@@ -1,9 +1,9 @@
 package com.stackroute.activitystream.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -19,10 +19,11 @@ import org.springframework.stereotype.Component;
  * to autowire the class from any other components of the application
  */
 
+@SuppressWarnings("serial")
 @Entity
 @Component
 @Table(name = "user_tag")
-public class UserTag {
+public class UserTag implements Serializable{
 	
 	/*
 	 * This class should have three fields
@@ -35,8 +36,8 @@ public class UserTag {
 	@Column(name = "userTagId", nullable = false)
 	private String userTagId;
 	
-	@Column(name = "userName")
-	private String userName;
+	@Column(name = "username")
+	private String username;
 	
 	@Column(name = "tag")
 	private String tag;
@@ -58,15 +59,15 @@ public class UserTag {
 	/**
 	 * @return the userName
 	 */
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
 	/**
 	 * @param userName the userName to set
 	 */
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String username) {
+		this.username = username;
 	}
 
 	/**

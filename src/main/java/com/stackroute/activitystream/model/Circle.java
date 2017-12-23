@@ -1,15 +1,15 @@
 package com.stackroute.activitystream.model;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /*
@@ -21,10 +21,11 @@ import org.springframework.stereotype.Component;
  * Please note that you will have to use @Component annotation on this class if wish
  * to autowire the class from any other components of the application
  */
+@SuppressWarnings("serial")
 @Entity
 @Component
-@Table(name = "CIRCLE")
-public class Circle {
+@Table(name = "circle")
+public class Circle implements Serializable {
 
 	/*
 	 * This class should have three fields
@@ -57,6 +58,7 @@ public class Circle {
 	
 	private Timestamp createdDate;
 	
+	@Autowired(required=false)
 	public Circle(String circleName, String creatorId, Timestamp timeStamp) {
 		this.circleName = circleName;
 		this.creatorId = creatorId;

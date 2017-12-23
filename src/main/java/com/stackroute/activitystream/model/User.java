@@ -1,10 +1,13 @@
 package com.stackroute.activitystream.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /*
@@ -17,10 +20,11 @@ import org.springframework.stereotype.Component;
  * to autowire the class from any other components of the application
  */
 
+@SuppressWarnings("serial")
 @Entity
 @Component
-@Table(name = "USER")
-public class User {
+@Table(name = "user")
+public class User implements Serializable {
 
 	/*
 	 * This class should have three fields
@@ -30,21 +34,22 @@ public class User {
 	 */
 	
 	@Id
-	@Column(name = "userName", nullable = false)
-	private String userName;
+	@Column(name = "username", nullable = false)
+	public String username;
 	
 	@Column(name = "name", nullable = false)
-	private String name;
+	public String name;
 	
 	@Column(name = "password", nullable = false)
-	private String password;
+	public String password;
 	
-	public User(String userName, String name, String password) {
-		this.userName = userName;
+	@Autowired(required=false)
+	public User(String username, String name, String password) {
+		this.username = username;
 		this.name = name;
 		this.password = password;
 	}
-
+	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
@@ -55,11 +60,14 @@ public class User {
 	}
 
 	public void setPassword(String string) {
-		this.password = password;		
+		this.password = string;		
 	}
 
+	/**
+	 * @param userName the userName to set
+	 */
 	public void setUsername(String string) {
-		this.userName = string;
+		this.username = string;
 		
 	}
 
@@ -70,15 +78,8 @@ public class User {
 	/**
 	 * @return the userName
 	 */
-	public String getUserName() {
-		return userName;
-	}
-
-	/**
-	 * @param userName the userName to set
-	 */
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public String getUsername() {
+		return this.username;
 	}
 
 	/**
@@ -87,6 +88,4 @@ public class User {
 	public String getName() {
 		return name;
 	}
-
-	
 }

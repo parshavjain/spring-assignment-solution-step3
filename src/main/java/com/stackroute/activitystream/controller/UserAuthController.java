@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -53,19 +51,22 @@ public class UserAuthController {
 	@RequestMapping(value="/api/authenticate", method = RequestMethod.POST)
 	public ResponseEntity<User> validate(@RequestBody User user, HttpSession session) {
 		//null empty check.
-		if (null == user || null == user.getPassword() || null == user.getUserName() || user.getUserName().isEmpty()
+		if (null == user || null == user.getPassword() || null == user.getUsername() || user.getUsername().isEmpty()
 				|| user.getPassword().isEmpty()) {
 			return new ResponseEntity<User>(HttpStatus.UNAUTHORIZED);
 		}
 		
 		//Validating username and password.
 		//Service call.
-		boolean success = userDAO.validate(user.getUserName(), user.getPassword());
+		boolean success = userDAO.validate(user.getUsername(), user.getPassword());
 		
 		//Login success
 		if(success) {
-			session.setAttribute("userName", user.getUserName());
-			return new ResponseEntity<User>(HttpStatus.OK);
+			User tempUser = userDAO.get(user.getUsername());
+			if(null != tempUser) {
+				session.setAttribute("userName", tempUser.getUsername());
+				return new ResponseEntity<User>(tempUser, HttpStatus.OK);
+			}			
 		}
 		
 		//Login failed
@@ -82,7 +83,12 @@ public class UserAuthController {
 	 * 
 	 * This handler method should map to the URL "/api/logout" using HTTP PUT method
 	*/ 
+	@RequestMapping(value="/api/logout", method = RequestMethod.PUT)
 	public ResponseEntity<User> logout(HttpSession session) {
+		String loggedUserName = (String) session.getAttribute("userName");
+		if (null == loggedUserName) {
+			return new ResponseEntity<User>(HttpStatus.BAD_REQUEST); 
+		}
 		session.removeAttribute("userName");
 		session.invalidate();
 		return new ResponseEntity<User>(HttpStatus.OK); 

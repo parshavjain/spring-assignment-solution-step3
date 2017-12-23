@@ -53,8 +53,6 @@ public class MessageController {
 	@Qualifier("messageDAO")
 	private MessageDAO messageDAO;
 
-	@Autowired
-	private UserTag userTag;
 
 	/*
 	 * Define a handler method which will send a message to a circle by reading the
@@ -161,12 +159,12 @@ public class MessageController {
 	 * 2. 401(UNAUTHORIZED) - If the user is not logged in
 	 * 
 	 * This handler method should map to the URL
-	 * "/api/message/getMessagesByUser/{circleName}/{pageNumber}" using HTTP GET
+	 * "/api/message/getMessagesByCircle/{circleName}/{pageNumber}" using HTTP GET
 	 * method" where "circleName" should be replaced by a valid user name without {}
 	 * and "pageNumber" should be replaced by the numeric page number that we are
 	 * looking for without {}
 	 */
-	@RequestMapping(value = "/api/message/getMessagesByUser/{circleName}/{pageNumber}", method = RequestMethod.GET)
+	@RequestMapping(value = "/api/message/getMessagesByCircle/{circleName}/{pageNumber}", method = RequestMethod.GET)
 	private ResponseEntity<List<Message>> getMessagesByCircle(@PathVariable("circleName") String circleName,
 			@PathVariable("pageNumber") int pageNumber, HttpSession session) {
 		String loggedUserName = (String) session.getAttribute("userName");
@@ -296,12 +294,18 @@ public class MessageController {
 	 * "/api/message/tags/search/user/{username}" using HTTP GET method" where
 	 * "username" should be replaced by a valid user name without {}
 	 */
-	@RequestMapping(value = "/api/message/tags/search/user/{username}", method = RequestMethod.PUT)
-	private ResponseEntity<List<String>> searchTag(@PathVariable("username") String userName,  HttpSession session) {
+	@RequestMapping(value = "/api/message/tags/search/user/{username}", method = RequestMethod.GET)
+	private ResponseEntity<List<String>> searchTag(@PathVariable("username") String username,  HttpSession session) {
 		String loggedUserName = (String) session.getAttribute("userName");
-		if (null == loggedUserName) {
+		if (null == loggedUserName
+				|| !loggedUserName.equals(username)) {
 			return new ResponseEntity<List<String>>(HttpStatus.UNAUTHORIZED);
 		}
-		return new ResponseEntity<List<String>>(messageDAO.listMyTags(userName), HttpStatus.OK);
+		
+		List<String> tagsList = messageDAO.listMyTags(username);
+		if(null != tagsList) {
+			return new ResponseEntity<List<String>>(tagsList, HttpStatus.OK);
+		}
+		return new ResponseEntity<List<String>>(HttpStatus.UNAUTHORIZED);
 	}
 }

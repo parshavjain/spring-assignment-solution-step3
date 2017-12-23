@@ -1,7 +1,7 @@
 package com.stackroute.activitystream.model;
 
 
-import java.sql.Time;
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Date;
 
@@ -12,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
@@ -24,10 +25,11 @@ import org.springframework.stereotype.Component;
  * Please note that you will have to use @Component annotation on this class if wish
  * to autowire the class from any other components of the application
  */
+@SuppressWarnings("serial")
 @Entity
 @Component
-@Table(name = "MESSAGE")
-public class Message {
+@Table(name = "message")
+public class Message implements Serializable {
 
 	/*
 	 * This class should have eight fields
@@ -40,30 +42,30 @@ public class Message {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "messageId", nullable = false)
-	private int messageId;
+	private Integer messageId;
 	
 	@Column(name = "senderName", nullable = false)
 	private String sender;
 	
-	@Column(name = "receiverId")
+	@Column(name = "receiverId", nullable = true)
 	private String receiverId;
 	
-	@Column(name = "circleName")
+	@Column(name = "circleName", nullable= true)
 	private String circleName;
 	
 	@Column(name = "postedDate")
 	private Timestamp postedDate;
 	
-	@Column(name = "streamType")
+	@Column(name = "streamType", nullable = false)
 	private String streamType;
 	
-	@Column(name = "message")
+	@Column(name = "message", nullable = false)
 	private String message;
 	
 	@Column(name = "tag")
 	private String tag;
 	
-	
+	@Autowired(required=false)
 	public Message(String senderName, String receiverId, String circleName, Timestamp postedDate, String streamType,
 			String message, String tag) {
 		this.sender = senderName;
@@ -75,10 +77,14 @@ public class Message {
 		this.tag = tag;
 		}
 	
+	public Message() {
+		
+	}
+	
 	/**
 	 * @return the messageId
 	 */
-	public int getMessageId() {
+	public Integer getMessageId() {
 		return messageId;
 	}
 
@@ -86,7 +92,7 @@ public class Message {
 	 * @param messageId
 	 *            the messageId to set
 	 */
-	public void setMessageId(final int messageId) {
+	public void setMessageId(final Integer messageId) {
 		this.messageId = messageId;
 	}
 

@@ -1,10 +1,13 @@
 package com.stackroute.activitystream.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -44,12 +47,12 @@ public class UserController {
 	 * This handler method should map to the URL "/api/user" using HTTP GET method
 	*/
 	@RequestMapping(value = "/api/user", method = RequestMethod.GET)
-	public ResponseEntity<User> getAllUsers(HttpSession session) {
+	public ResponseEntity<List<User>> getAllUsers(HttpSession session) {
 		String userName = (String) session.getAttribute("userName");
 		if (null == userName) {
-			return new ResponseEntity<User>(HttpStatus.UNAUTHORIZED);
+			return new ResponseEntity<List<User>>(HttpStatus.UNAUTHORIZED);
 		}
-		return new ResponseEntity<User>(HttpStatus.OK);
+		return new ResponseEntity<List<User>>(userDAO.list(), HttpStatus.OK);
 	}
 	
 
@@ -62,17 +65,20 @@ public class UserController {
 	 * This handler method should map to the URL "/api/user/{username}" using HTTP GET method
 	 * where "username" should be replaced by a username without {}
 	*/
-	@RequestMapping(value = "/api/user/{username}", method = RequestMethod.GET)
-	public ResponseEntity<User> getUser(@PathVariable String userName, HttpSession session) {
+	@RequestMapping(value = "/api/user/{username}",
+			method = RequestMethod.GET,
+			produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ResponseEntity<User> getUser(@PathVariable("username") String username, HttpSession session) {
 		String loggedUserName = (String) session.getAttribute("userName");
-		if (null == loggedUserName) {
+		if (null == loggedUserName
+				|| !loggedUserName.equals(username)) {
 			return new ResponseEntity<User>(HttpStatus.UNAUTHORIZED);
 		}
-		if(null != userName
-				&& userName.isEmpty()) {
-			User user = userDAO.get(userName);
+		if(null != username
+				&& !username.isEmpty()) {
+			User user = userDAO.get(username);
 			if(null != user) {
-				return new ResponseEntity<User>(HttpStatus.OK);
+				return new ResponseEntity<User>(user, HttpStatus.OK);
 			}			
 		}
 		return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
@@ -93,11 +99,12 @@ public class UserController {
 	*/
 	@RequestMapping(value = "/api/user", method = RequestMethod.POST)
 	public ResponseEntity<User> registerUser(@RequestBody User user) {
-		if(null != user
-				&& null != user.getUserName()
-				&& !userDAO.exists(user.getUserName())) {
-			userDAO.save(user);
-			return new ResponseEntity<User>(HttpStatus.OK);
+		if (null != user && null != user.getUsername()) {
+			User tempUser = userDAO.get(user.getUsername());
+			if (null == tempUser) {
+				userDAO.save(user);
+				return new ResponseEntity<User>(user, HttpStatus.CREATED);
+			}
 		}
 		return new ResponseEntity<User>(HttpStatus.CONFLICT);
 	}
@@ -114,23 +121,17 @@ public class UserController {
 	 * This handler method should map to the URL "/api/user/{username}" using HTTP PUT method
 	*/
 	@RequestMapping(value = "/api/user/{username}", method = RequestMethod.PUT)
-	public ResponseEntity<User> updateUser(User user, HttpSession session) {
+	public ResponseEntity<User> updateUser(@PathVariable("username") String username, @RequestBody User user, HttpSession session) {
 		String loggedUserName = (String) session.getAttribute("userName");
 		if (null == loggedUserName) {
 			return new ResponseEntity<User>(HttpStatus.UNAUTHORIZED);
 		}
 		
-		if(null != user
-				&& null != user.getUserName()) {
-			User tempUser = userDAO.get(user.getUserName());
-			if(null != tempUser
-					&& null != tempUser.getName()
-					&& null != user.getName() && !tempUser.getName().equalsIgnoreCase(user.getName())
-					&& null != user.getPassword() && !tempUser.getPassword().equalsIgnoreCase(user.getPassword())) {
-				tempUser.setName(user.getName());
-				tempUser.setPassword(user.getPassword());
-				userDAO.update(tempUser);
-				return new ResponseEntity<User>(HttpStatus.OK);
+		if(null != username) {
+			User tempUser = userDAO.get(username);
+			if(null != user && null != tempUser) {
+				userDAO.update(user);
+				return new ResponseEntity<User>(user, HttpStatus.OK);
 			}
 		}
 		return new ResponseEntity<User>(HttpStatus.NOT_FOUND);

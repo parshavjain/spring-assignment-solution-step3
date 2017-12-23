@@ -1,12 +1,15 @@
 package com.stackroute.activitystream.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /*
@@ -19,10 +22,11 @@ import org.springframework.stereotype.Component;
  * to autowire the class from any other components of the application
  */
 
+@SuppressWarnings("serial")
 @Entity
 @Component
 @Table(name = "user_circle")
-public class UserCircle {
+public class UserCircle implements Serializable {
 
 	/*
 	 * This class should have three fields (userCircleId,username,circleName). Out
@@ -32,23 +36,31 @@ public class UserCircle {
 	 */
 
 	@Id
+	@GeneratedValue(generator = "uuid")
+	@GenericGenerator(name = "uuid", strategy = "uuid2")
 	@Column(name = "userCircleId", nullable = false)
 	private String userCircleId;
 
-	@Column(name = "userName")
-	private String userName;
+	@Column(name = "username")
+	private String username;
 
 	@Column(name = "circleName")
 	private String circleName;
 
-	public UserCircle(String userName, String circleName) {
-		this.userName = userName;
+	@Autowired(required=false)
+	public UserCircle(String username, String circleName) {
+		this.username = username;
 		this.circleName = circleName;
+	}
+	
+	public UserCircle() {
+		
 	}
 
 	/**
 	 * @return the userCircleId
 	 */
+	
 	public String getUserCircleId() {
 		return userCircleId;
 	}
@@ -64,16 +76,16 @@ public class UserCircle {
 	/**
 	 * @return the userName
 	 */
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
 	/**
 	 * @param userName
 	 *            the userName to set
 	 */
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String username) {
+		this.username = username;
 	}
 
 	/**
@@ -90,5 +102,4 @@ public class UserCircle {
 	public void setCircleName(String circleName) {
 		this.circleName = circleName;
 	}
-
 }

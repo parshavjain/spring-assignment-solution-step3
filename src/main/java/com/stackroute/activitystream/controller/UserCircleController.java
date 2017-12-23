@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.stackroute.activitystream.dao.CircleDAO;
 import com.stackroute.activitystream.dao.UserCircleDAO;
 import com.stackroute.activitystream.dao.UserDAO;
+import com.stackroute.activitystream.model.Circle;
+import com.stackroute.activitystream.model.User;
 import com.stackroute.activitystream.model.UserCircle;
 
 /*
@@ -46,8 +48,6 @@ public class UserCircleController {
 	@Qualifier("circleDAO")
 	private CircleDAO circleDAO;
 
-	@Autowired	
-	private UserCircle userCircle;
 
 	/*
 	 * Define a handler method which will add a user to a circle.
@@ -64,23 +64,31 @@ public class UserCircleController {
 	 * where "username" should be replaced by a valid username without {} and
 	 * "circleName" should be replaced by a valid circle name without {}
 	 */
-	@RequestMapping(value = "/api/usercircle/addToCircle/{username}/{circleName}", method = RequestMethod.GET)
-	private ResponseEntity<UserCircle> addToCircle(@PathVariable("username") String userName,
+	@RequestMapping(value = "/api/usercircle/addToCircle/{username}/{circleName}", method = RequestMethod.PUT)
+	private ResponseEntity<UserCircle> addToCircle(@PathVariable("username") String username,
 			@PathVariable("circleName") String circleName, HttpSession session) {
 		String loggedUserName = (String) session.getAttribute("userName");
 		if (null == loggedUserName) {
 			return new ResponseEntity<UserCircle>(HttpStatus.UNAUTHORIZED);
 		}
 
-		if (null == userName || null == circleName || !(userDAO.exists(userName))
-				|| (null == circleDAO.get(circleName))) {
-			return new ResponseEntity<UserCircle>(HttpStatus.NOT_FOUND);
+		if (null != username) {
+			User user = userDAO.get(username);
+			if (null == user) {
+				return new ResponseEntity<UserCircle>(HttpStatus.NOT_FOUND);
+			}
+		}
+		if (null != circleName) {
+			Circle circle = circleDAO.get(circleName);
+			if (null == circle) {
+				return new ResponseEntity<UserCircle>(HttpStatus.NOT_FOUND);
+			}
 		}
 
-		userCircle = userCircleDAO.get(userName, circleName);
+		UserCircle userCircle = userCircleDAO.get(username, circleName);
 
 		if (null == userCircle) {
-			boolean success = userCircleDAO.addUser(userName, circleName);
+			boolean success = userCircleDAO.addUser(username, circleName);
 			if (success) {
 				return new ResponseEntity<UserCircle>(HttpStatus.OK);
 			}
@@ -104,7 +112,7 @@ public class UserCircleController {
 	 * method" where "username" should be replaced by a valid username without {}
 	 * and "circleName" should be replaced by a valid circle name without {}
 	 */
-	@RequestMapping(value = "/api/usercircle/removeFromCircle/{username}/{circleName}", method = RequestMethod.GET)
+	@RequestMapping(value = "/api/usercircle/removeFromCircle/{username}/{circleName}", method = RequestMethod.PUT)
 	private ResponseEntity<UserCircle> removeFromCircle(@PathVariable("username") String userName,
 			@PathVariable("circleName") String circleName, HttpSession session) {
 		String loggedUserName = (String) session.getAttribute("userName");
@@ -112,7 +120,7 @@ public class UserCircleController {
 			return new ResponseEntity<UserCircle>(HttpStatus.UNAUTHORIZED);
 		}
 
-		if (null != userName && null != userCircle) {
+		if (null != circleName) {
 			boolean success = userCircleDAO.removeUser(userName, circleName);
 			if (success) {
 				return new ResponseEntity<UserCircle>(HttpStatus.OK);
@@ -133,12 +141,12 @@ public class UserCircleController {
 	 * "username" should be replaced by a valid username without {}
 	 */
 	@RequestMapping(value = "/api/usercircle/searchByUser/{username}", method = RequestMethod.GET)
-	private ResponseEntity<List<String>> searchByUser(@PathVariable("username") String userName, HttpSession session) {
+	private ResponseEntity<List<String>> searchByUser(@PathVariable("username") String username, HttpSession session) {
 		String loggedUserName = (String) session.getAttribute("userName");
 		if (null == loggedUserName) {
 			return new ResponseEntity<List<String>>(HttpStatus.UNAUTHORIZED);
 		}
-		return new ResponseEntity<List<String>>(userCircleDAO.getMyCircles(userName), HttpStatus.OK);
+		return new ResponseEntity<List<String>>(userCircleDAO.getMyCircles(username), HttpStatus.OK);
 	}
 
 }

@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -63,7 +64,9 @@ public class CircleController {
 	 * This handler method should map to the URL "/api/circle" using HTTP POST
 	 * method".
 	 */
-	@RequestMapping(value = "/api/circle", method = RequestMethod.POST)
+	@RequestMapping(value = "/api/circle",
+			method = RequestMethod.POST,
+			produces = {MediaType.APPLICATION_JSON_UTF8_VALUE})
 	public ResponseEntity<Circle> createCircle(@RequestBody Circle circle, HttpSession session) {
 		String userName = (String) session.getAttribute("userName");
 		if (null == userName) {
@@ -78,7 +81,7 @@ public class CircleController {
 			circle.setCreatedDate();
 			boolean success = circleDAO.save(circle);
 			if(success) {
-				return new ResponseEntity<Circle>(HttpStatus.CREATED);
+				return new ResponseEntity<Circle>(circle, HttpStatus.CREATED);
 			}			
 		}
 		return new ResponseEntity<Circle>(HttpStatus.CONFLICT);

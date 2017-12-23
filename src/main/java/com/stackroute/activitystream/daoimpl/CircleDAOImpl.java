@@ -2,7 +2,6 @@ package com.stackroute.activitystream.daoimpl;
 
 import java.util.List;
 
-
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.stackroute.activitystream.dao.CircleDAO;
 import com.stackroute.activitystream.dao.UserDAO;
 import com.stackroute.activitystream.model.Circle;
+import com.stackroute.activitystream.model.User;
 
 /*
 * This class is implementing the CircleDAO interface. This class has to be annotated with 
@@ -38,6 +38,12 @@ public class CircleDAOImpl implements CircleDAO {
 	@Autowired
 	private UserDAO userDAO;
 
+	/*
+	 * Autowiring should be implemented for CircleDAO
+	 */
+	@Autowired
+	private CircleDAO circleDAO;
+
 	// Parameterized constructor.
 	public CircleDAOImpl(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
@@ -48,9 +54,24 @@ public class CircleDAOImpl implements CircleDAO {
 	 */
 	public boolean save(Circle circle) {
 		boolean success = false;
-		if (null != circle) {
-			sessionFactory.getCurrentSession().save(circle);
-			success = true;
+		try {
+			if (null != circle && null != circle.getCreatorId()) {
+				User user = userDAO.get(circle.getCreatorId());
+				if (null == user) {
+					return success;
+				}
+				Circle tempCircle = circleDAO.get(circle.getCircleName());
+				if (null != tempCircle) {
+					return success;
+				}
+				if (null != user) {
+					sessionFactory.getCurrentSession().save(circle);
+					success = true;
+				}
+			}
+
+		} catch (Exception ex) {
+			return success;
 		}
 		return success;
 	}
@@ -72,9 +93,13 @@ public class CircleDAOImpl implements CircleDAO {
 	 */
 	public boolean delete(Circle circle) {
 		boolean success = false;
-		if (null != circle) {
-			sessionFactory.getCurrentSession().delete(circle);
-			success = true;
+		try {
+			if (null != circle) {
+				sessionFactory.getCurrentSession().delete(circle);
+				success = true;
+			}
+		} catch (Exception e) {
+			return success;
 		}
 		return success;
 	}
@@ -82,13 +107,19 @@ public class CircleDAOImpl implements CircleDAO {
 	/*
 	 * Retrieve a specific circle
 	 */
+	@SuppressWarnings("rawtypes")
 	public Circle get(String circleName) {
 		Circle circle = null;
-		if(null != circleName) {
-			Query query = sessionFactory.getCurrentSession().createQuery("from Circle where circleName := circleName");
-			query.setParameter("circleName", circleName);
-			circle = (Circle) query.getSingleResult();
-		}		
+		try {
+			if (null != circleName) {
+				Query query = sessionFactory.getCurrentSession()
+						.createQuery("from Circle where circleName = :circleName");
+				query.setParameter("circleName", circleName);
+				circle = (Circle) query.getSingleResult();
+			}
+		} catch (Exception e) {
+			return circle;
+		}
 		return circle;
 
 	}
@@ -96,6 +127,7 @@ public class CircleDAOImpl implements CircleDAO {
 	/*
 	 * retrieving all circles
 	 */
+	@SuppressWarnings("unchecked")
 	public List<Circle> getAllCircles() {
 		List<Circle> circleList = sessionFactory.getCurrentSession().createQuery("from Circle").list();
 		return circleList;
@@ -104,10 +136,10 @@ public class CircleDAOImpl implements CircleDAO {
 	/*
 	 * Retrieving all circles that matches a search string
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<Circle> getAllCircles(String searchString) {
 		List<Circle> circleList = null;
-		Query query = sessionFactory.getCurrentSession().createQuery("from Circle where circleName like ?circleName");
+		Query query = sessionFactory.getCurrentSession().createQuery("from Circle where circleName like :circleName");
 		query.setParameter("circleName", "%" + searchString + "%");
 		circleList = query.list();
 		return circleList;

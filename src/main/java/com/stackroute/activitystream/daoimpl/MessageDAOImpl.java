@@ -1,15 +1,11 @@
 package com.stackroute.activitystream.daoimpl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.transaction.Transactional;
 
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import org.hibernate.transform.Transformers;
-import org.hibernate.type.StandardBasicTypes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -17,7 +13,9 @@ import com.stackroute.activitystream.dao.CircleDAO;
 import com.stackroute.activitystream.dao.MessageDAO;
 import com.stackroute.activitystream.dao.UserCircleDAO;
 import com.stackroute.activitystream.dao.UserDAO;
+import com.stackroute.activitystream.model.Circle;
 import com.stackroute.activitystream.model.Message;
+import com.stackroute.activitystream.model.User;
 import com.stackroute.activitystream.model.UserTag;
 
 /*
@@ -65,6 +63,7 @@ public class MessageDAOImpl implements MessageDAO {
 	 * Retrieve messages from a specific circle. For improved performace, we will
 	 * implement retrieving the messages partially by implementing pagination
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public List<Message> getMessagesFromCircle(String circleName, int pageNumber) {
 		List<Message> messageList = null;
 		if (null != circleName) {
@@ -89,6 +88,7 @@ public class MessageDAOImpl implements MessageDAO {
 	 * recipient. For improved performace, we will implement retrieving the messages
 	 * partially by implementing pagination
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public List<Message> getMessagesFromUser(String userName, String otherUsername, int pageNumber) {
 		List<Message> messages = null;
 		if (null == userName || null != otherUsername) {
@@ -108,6 +108,7 @@ public class MessageDAOImpl implements MessageDAO {
 	 * improved performace, we will implement retrieving the messages partially by
 	 * implementing pagination
 	 */
+	@SuppressWarnings("unchecked")
 	public List<Message> getMessages(String userName, int pageNumber) {
 		List<Message> messages = null;
 		if (null != userName) {
@@ -122,21 +123,51 @@ public class MessageDAOImpl implements MessageDAO {
 	 * current timestamp as the posted timestamp.
 	 */
 	public boolean sendMessageToCircle(String circleName, Message message) {
-		if (null != circleName && null != message && !circleName.isEmpty()) {
-			sessionFactory.getCurrentSession().save(message);
-			return true;
+		try {
+			if (null != message && null != message.getSenderName()) {
+				User user = userDAO.get(message.getSenderName());
+				if (null == user) {
+					return false;
+				}
+				if (null != circleName) {
+					Circle circle = circleDAO.get(circleName);
+					if (null == circle) {
+						return false;
+					}
+					message.setCircleName(circleName);
+					sessionFactory.getCurrentSession().save(message);
+					return true;
+				}
+			}
+		} catch (Exception e) {
+			return false;
 		}
 		return false;
-
 	}
 
 	/*
 	 * Send message to a specific user
 	 */
 	public boolean sendMessageToUser(String username, Message message) {
-		if (null != username && null != message && !username.isEmpty()) {
-			sessionFactory.getCurrentSession().save(message);
-			return true;
+		try {
+			if (null != message && null != message.getSenderName()) {
+				User user = userDAO.get(message.getSenderName());
+				if (null == user) {
+					return false;
+				}
+				if (null != username) {
+					User receiver = userDAO.get(username);
+					if (null == receiver) {
+						return false;
+					}
+					message.setReceiverId(username);
+					sessionFactory.getCurrentSession().save(message);
+					return true;
+				}
+			}
+
+		} catch (Exception e) {
+			return false;
 		}
 		return false;
 	}
@@ -144,6 +175,7 @@ public class MessageDAOImpl implements MessageDAO {
 	/*
 	 * Retrieve all the tags available in the messages
 	 */
+	@SuppressWarnings("unchecked")
 	public List<String> listTags() {
 		return sessionFactory.getCurrentSession().createQuery("select DISTINCT('tag') from Message").list();
 	}
@@ -151,13 +183,18 @@ public class MessageDAOImpl implements MessageDAO {
 	/*
 	 * Retrieve all tags subscribed by a user
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public List<String> listMyTags(String userName) {
 		List<String> tags = null;
-		if (null != userName) {
-			Query selectQuery = sessionFactory.getCurrentSession()
-					.createQuery("select tag from Message where senderName := senderName");
-			selectQuery.setParameter("senderName", userName);
-			tags = selectQuery.list();
+		try {
+			if (null != userName) {
+				Query selectQuery = sessionFactory.getCurrentSession()
+						.createQuery("select tag from Message where senderName := senderName");
+				selectQuery.setParameter("senderName", userName);
+				tags = selectQuery.list();
+			}
+		} catch (Exception e) {
+			return tags;
 		}
 		return tags;
 	}
@@ -166,9 +203,10 @@ public class MessageDAOImpl implements MessageDAO {
 	 * Retrieve all messages containing a specific tag. For improved performace, we
 	 * will implement retrieving the messages partially by implementing pagination
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public List<Message> showMessagesWithTag(String tag, int pageNumber) {
 		List<Message> messages = null;
-		if(null != tag) {
+		if (null != tag) {
 			Query query = sessionFactory.getCurrentSession().createQuery("from Message where tag := tag");
 			query.setParameter("tag", tag);
 			query.setFirstResult(0);
@@ -183,7 +221,7 @@ public class MessageDAOImpl implements MessageDAO {
 	 * user and tag both exists.
 	 */
 	public boolean subscribeUserToTag(String userName, String tag) {
-		if(null != userName && null != tag) {
+		if (null != userName && null != tag) {
 			UserTag userTag = new UserTag();
 			userTag.setTag(tag);
 			userTag.setUserName(userName);
@@ -198,7 +236,7 @@ public class MessageDAOImpl implements MessageDAO {
 	 * the user has subscribed to the tag or not
 	 */
 	public boolean unsubscribeUserToTag(String userName, String tag) {
-		if(null != userName && null != tag) {
+		if (null != userName && null != tag) {
 			UserTag userTag = new UserTag();
 			userTag.setTag(tag);
 			userTag.setUserName(userName);
@@ -212,13 +250,15 @@ public class MessageDAOImpl implements MessageDAO {
 	/*
 	 * Retrieve UserTag object for a username and a tag
 	 */
+	@SuppressWarnings("rawtypes")
 	public UserTag getUserTag(String userName, String tag) {
 		UserTag userTag = null;
-		if(null != userName && null != tag && userName.isEmpty() && tag.isEmpty()) {
-			Query searchQuery = sessionFactory.getCurrentSession().createQuery("from userTag where userName := userName and tag := tag");
+		if (null != userName && null != tag && userName.isEmpty() && tag.isEmpty()) {
+			Query searchQuery = sessionFactory.getCurrentSession()
+					.createQuery("from userTag where userName := userName and tag := tag");
 			searchQuery.setParameter("userName", userName);
 			searchQuery.setParameter("tag", tag);
-			userTag = (UserTag)searchQuery.getSingleResult();			
+			userTag = (UserTag) searchQuery.getSingleResult();
 		}
 		return userTag;
 	}
