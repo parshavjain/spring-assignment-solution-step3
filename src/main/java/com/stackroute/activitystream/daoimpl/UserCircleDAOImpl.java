@@ -1,6 +1,9 @@
 package com.stackroute.activitystream.daoimpl;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.transaction.Transactional;
 
@@ -142,7 +145,9 @@ public class UserCircleDAOImpl implements UserCircleDAO {
 			Query query = sessionFactory.getCurrentSession()
 					.createQuery("select uc.circleName from UserCircle uc where uc.username = :userName");
 			query.setParameter("userName", userName);
-			userCircleList = query.list();
+			Set<String> set = new HashSet<String>(query.list());
+			userCircleList = new ArrayList<String>();
+			userCircleList.addAll(set);
 		} catch (Exception ex) {
 			return userCircleList;
 		}
