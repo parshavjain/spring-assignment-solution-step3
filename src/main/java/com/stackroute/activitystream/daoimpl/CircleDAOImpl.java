@@ -64,10 +64,8 @@ public class CircleDAOImpl implements CircleDAO {
 				if (null != tempCircle) {
 					return success;
 				}
-				if (null != user) {
-					sessionFactory.getCurrentSession().save(circle);
+					sessionFactory.getCurrentSession().merge(circle);
 					success = true;
-				}
 			}
 
 		} catch (Exception ex) {
