@@ -1,0 +1,128 @@
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'circleDAO' via factory method to bean named 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.CircleDAOImpl]: AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.CircleDAOImpl.sessionFactory
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.CircleDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.daoimpl.CircleDAOImpl.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.CircleDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.daoimpl.CircleDAOImpl.circleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'circleDAO' to allow for resolving potential circular references
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'circleDAO': AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.CircleDAOImpl.sessionFactory
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'circleDAO' to bean named 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'circleDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.daoimpl.CircleDAOImpl.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userDAO' via factory method to bean named 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.UserDAOImpl]: AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.UserDAOImpl.sessionFactory
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'userDAO' to allow for resolving potential circular references
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'userDAO': AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.UserDAOImpl.sessionFactory
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userDAO' to bean named 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 11:57:41 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.get' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 11:57:41 [main] DEBUG o.s.a.f.a.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'userDAO' with 0 common interceptors and 1 specific interceptors
+2017-12-27 11:57:41 [main] DEBUG o.s.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.stackroute.activitystream.daoimpl.UserDAOImpl@7f8633ae]
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'circleDAO' to bean named 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'circleDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.daoimpl.CircleDAOImpl.circleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 11:57:41 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.CircleDAOImpl.get' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-12-27 11:57:41 [main] DEBUG o.s.a.f.a.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'circleDAO' with 0 common interceptors and 1 specific interceptors
+2017-12-27 11:57:41 [main] DEBUG o.s.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.stackroute.activitystream.daoimpl.CircleDAOImpl@f4c0e4e]
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning eagerly cached instance of singleton bean 'circleDAO' that is not fully initialized yet - a consequence of a circular reference
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'circleDAO' to bean named 'circleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'circleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'circleController' to bean named 'circleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'circleController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'messageController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'messageController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.controller.MessageController]: AutowiredFieldElement for private com.stackroute.activitystream.dao.MessageDAO com.stackroute.activitystream.controller.MessageController.messageDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'messageController' to allow for resolving potential circular references
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'messageController': AutowiredFieldElement for private com.stackroute.activitystream.dao.MessageDAO com.stackroute.activitystream.controller.MessageController.messageDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Qualifier]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'messageDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'messageDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'messageDAO' via factory method to bean named 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.MessageDAOImpl]: AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.MessageDAOImpl.sessionFactory
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.MessageDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.daoimpl.MessageDAOImpl.circleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.MessageDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.daoimpl.MessageDAOImpl.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.MessageDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserCircleDAO com.stackroute.activitystream.daoimpl.MessageDAOImpl.userCircleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'messageDAO' to allow for resolving potential circular references
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'messageDAO': AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.MessageDAOImpl.sessionFactory
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'messageDAO' to bean named 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'messageDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.daoimpl.MessageDAOImpl.circleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'circleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'messageDAO' to bean named 'circleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'messageDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.daoimpl.MessageDAOImpl.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'messageDAO' to bean named 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'messageDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.UserCircleDAO com.stackroute.activitystream.daoimpl.MessageDAOImpl.userCircleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userCircleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'userCircleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userCircleDAO' via factory method to bean named 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.UserCircleDAOImpl]: AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.UserCircleDAOImpl.sessionFactory
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.UserCircleDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.daoimpl.UserCircleDAOImpl.circleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.UserCircleDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.daoimpl.UserCircleDAOImpl.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'userCircleDAO' to allow for resolving potential circular references
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'userCircleDAO': AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.UserCircleDAOImpl.sessionFactory
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userCircleDAO' to bean named 'sessionFactory'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'userCircleDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.daoimpl.UserCircleDAOImpl.circleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'circleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userCircleDAO' to bean named 'circleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'userCircleDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.daoimpl.UserCircleDAOImpl.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userCircleDAO' to bean named 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 11:57:41 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserCircleDAOImpl.get' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 11:57:41 [main] DEBUG o.s.a.f.a.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'userCircleDAO' with 0 common interceptors and 1 specific interceptors
+2017-12-27 11:57:41 [main] DEBUG o.s.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.stackroute.activitystream.daoimpl.UserCircleDAOImpl@10ee04df]
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'userCircleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'messageDAO' to bean named 'userCircleDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 11:57:41 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.MessageDAOImpl.getMessagesFromUser' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 11:57:41 [main] DEBUG o.s.a.f.a.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'messageDAO' with 0 common interceptors and 1 specific interceptors
+2017-12-27 11:57:41 [main] DEBUG o.s.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.stackroute.activitystream.daoimpl.MessageDAOImpl@692fd26]
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'messageDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'messageController' to bean named 'messageDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'messageController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userAuthController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'userAuthController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.controller.UserAuthController]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.controller.UserAuthController.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'userAuthController' to allow for resolving potential circular references
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'userAuthController': AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.controller.UserAuthController.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Qualifier]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userAuthController' to bean named 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'userAuthController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userCircleController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'userCircleController'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.controller.UserCircleController]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.controller.UserCircleController.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.controller.UserCircleController]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserCircleDAO com.stackroute.activitystream.controller.UserCircleController.userCircleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.controller.UserCircleController]: AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.controller.UserCircleController.circleDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'userCircleController' to allow for resolving potential circular references
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'userCircleController': AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.controller.UserCircleController.userDAO
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Qualifier]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userDAO'
+2017-12-27 11:57:41 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userCircleController' to bean named 'userDAO'

@@ -1,0 +1,96 @@
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - select user_.username, user_.name as name2_2_, user_.password as password3_2_ from user user_ where user_.username=?
+2017-12-27 12:51:08 [main] DEBUG o.h.r.j.i.ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractSaveEventListener - Generated identifier: will, using strategy: org.hibernate.id.Assigned
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.User{password=password, name=Will, username=will}
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - insert into user (name, password, username) values (?, ?, ?)
+2017-12-27 12:51:08 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.CircleDAOImpl.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.User#will]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.User#will]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.User{password=password, name=Will, username=will}
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - select user0_.username as username1_2_, user0_.name as name2_2_, user0_.password as password3_2_ from user user0_ where user0_.username=?
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.stackroute.activitystream.model.User#john]
+2017-12-27 12:51:08 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [com.stackroute.activitystream.model.User#john]
+2017-12-27 12:51:08 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.stackroute.activitystream.model.User#john]
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.User#will], EntityKey[com.stackroute.activitystream.model.User#john]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.User{password=password, name=Will, username=will}
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.User{password=password, name=John, username=john}
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - select circle0_.circleName as circleNa1_0_, circle0_.createdDate as createdD2_0_, circle0_.creatorId as creatorI3_0_ from circle circle0_ where circle0_.circleName=?
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractSaveEventListener - Generated identifier: Java, using strategy: org.hibernate.id.Assigned
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.Circle{createdDate=2017-12-27 12:51:08.51, creatorId=John, circleName=Java}
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - insert into circle (createdDate, creatorId, circleName) values (?, ?, ?)
+2017-12-27 12:51:08 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserCircleDAOImpl.addUser' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.Circle#Java]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.Circle#Java]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.Circle{createdDate=2017-12-27 12:51:08.51, creatorId=John, circleName=Java}
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - select user0_.username as username1_2_, user0_.name as name2_2_, user0_.password as password3_2_ from user user0_ where user0_.username=?
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.stackroute.activitystream.model.User#john]
+2017-12-27 12:51:08 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [com.stackroute.activitystream.model.User#john]
+2017-12-27 12:51:08 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.stackroute.activitystream.model.User#john]
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.Circle#Java], EntityKey[com.stackroute.activitystream.model.User#john]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.Circle{createdDate=2017-12-27 12:51:08.51, creatorId=John, circleName=Java}
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.User{password=password, name=John, username=john}
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - select circle0_.circleName as circleNa1_0_, circle0_.createdDate as createdD2_0_, circle0_.creatorId as creatorI3_0_ from circle circle0_ where circle0_.circleName=?
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.stackroute.activitystream.model.Circle#Java]
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractSaveEventListener - Generated identifier: 9403e5d8-dbcf-486e-b5fe-33fdd3e2036c, using strategy: org.hibernate.id.UUIDGenerator
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.UserCircle{userCircleId=9403e5d8-dbcf-486e-b5fe-33fdd3e2036c, circleName=Java, username=john}
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - insert into user_circle (circleName, username, userCircleId) values (?, ?, ?)
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.UserCircle#9403e5d8-dbcf-486e-b5fe-33fdd3e2036c]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.UserCircle#9403e5d8-dbcf-486e-b5fe-33fdd3e2036c]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2017-12-27 12:51:08 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+2017-12-27 12:51:08 [main] DEBUG o.h.internal.util.EntityPrinter - com.stackroute.activitystream.model.UserCircle{userCircleId=9403e5d8-dbcf-486e-b5fe-33fdd3e2036c, circleName=Java, username=john}
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.SQL - select user0_.username as username1_2_, user0_.name as name2_2_, user0_.password as password3_2_ from user user0_ where user0_.username=?
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+2017-12-27 12:51:08 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.stackroute.activitystream.model.User#will]
+2017-12-27 12:51:08 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [com.stackroute.activitystream.model.User#will]
+2017-12-27 12:51:08 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.stackroute.activitystream.model.User#will]
+2017-12-27 12:51:08 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.User#will], EntityKey[com.stackroute.activitystream.model.UserCircle#9403e5d8-dbcf-486e-b5fe-33fdd3e2036c]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction

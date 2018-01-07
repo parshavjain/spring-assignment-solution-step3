@@ -1,0 +1,64 @@
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'transactionInterceptor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionAttributeSource'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'transactionInterceptor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'applicationContextConfig'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'applicationContextConfig' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'applicationContextConfig'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'DAOLoggingAspect'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'DAOLoggingAspect'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'DAOLoggingAspect' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'DAOLoggingAspect'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'loggingAspect'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'loggingAspect'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'loggingAspect' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'loggingAspect'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'circleController'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'circleController'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.controller.CircleController]: AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.controller.CircleController.circleDAO
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'circleController' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'circleController': AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.controller.CircleController.circleDAO
+2017-12-27 12:54:12 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 12:54:12 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Qualifier]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'circleDAO'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'circleDAO'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sessionFactory'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'sessionFactory'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'dataSource'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'dataSource'
+2017-12-27 12:54:12 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'sessionFactory' via factory method to bean named 'dataSource'
+2017-12-27 12:54:12 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2017-12-27 12:54:12 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2017-12-27 12:54:12 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2017-12-27 12:54:12 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].

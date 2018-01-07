@@ -1,0 +1,96 @@
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'applicationContextConfig'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'applicationContextConfig' to allow for resolving potential circular references
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'applicationContextConfig'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'circleController'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'circleController'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.controller.CircleController]: AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.controller.CircleController.circleDAO
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'circleController' to allow for resolving potential circular references
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'circleController': AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.controller.CircleController.circleDAO
+2017-12-27 12:12:53 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 12:12:53 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Qualifier]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'circleDAO'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'circleDAO'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sessionFactory'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'sessionFactory'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'dataSource'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'dataSource'
+2017-12-27 12:12:53 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'sessionFactory' via factory method to bean named 'dataSource'
+2017-12-27 12:12:53 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2017-12-27 12:12:53 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2017-12-27 12:12:53 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2017-12-27 12:12:53 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2017-12-27 12:12:53 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.10.Final}
+2017-12-27 12:12:53 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+2017-12-27 12:12:53 [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+2017-12-27 12:12:53 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2017-12-27 12:12:53 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4a11eb84
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4a11eb84
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4a11eb84
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@696f0212
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@7bb6ab3a
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@32c8e539
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2eced48b
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2eced48b
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2eced48b
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@6475472c
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@6475472c
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6475472c
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@3d3ba765
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@3d3ba765
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3d3ba765
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@5c18016b
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@5c18016b
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5c18016b
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@2f6e28bc
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@2f6e28bc
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@2f6e28bc
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1d0d6318
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1d0d6318
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1d0d6318
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@bff34c6
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@bff34c6
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@bff34c6
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@11981797
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@11981797
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@40f70521
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@40f70521
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@31aa3ca5
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@31aa3ca5
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2ccca26f
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@698122b2
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@c1bd0be
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@c1bd0be
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@4b3a45f1
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@4b3a45f1
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@1021f6c9
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1021f6c9
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3fa2213
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3fa2213
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@478ee483
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@478ee483
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4044fb95
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4044fb95
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1bb564e2
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1bb564e2
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1cbf6e72
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1cbf6e72
+2017-12-27 12:12:53 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@75f65e45

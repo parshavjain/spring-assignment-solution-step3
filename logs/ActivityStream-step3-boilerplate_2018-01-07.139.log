@@ -1,0 +1,128 @@
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+2018-01-07 18:27:28 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'userCircleController'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userController'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'userController'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.controller.UserController]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.controller.UserController.userDAO
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'userController' to allow for resolving potential circular references
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'userController': AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.controller.UserController.userDAO
+2018-01-07 18:27:29 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2018-01-07 18:27:29 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Qualifier]: java.lang.IllegalArgumentException: Annotation must not be null
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userDAO'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userController' to bean named 'userDAO'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.a.a.a.AnnotationAwareAspectJAutoProxyCreator - Creating implicit proxy for bean 'userController' with 0 common interceptors and 2 specific interceptors
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.stackroute.activitystream.controller.UserController@e91af20]
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public org.springframework.http.ResponseEntity com.stackroute.activitystream.controller.UserController.getAllUsers(javax.servlet.http.HttpSession)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public org.springframework.http.ResponseEntity com.stackroute.activitystream.controller.UserController.getUser(java.lang.String,javax.servlet.http.HttpSession)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public org.springframework.http.ResponseEntity com.stackroute.activitystream.controller.UserController.registerUser(com.stackroute.activitystream.model.User)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public org.springframework.http.ResponseEntity com.stackroute.activitystream.controller.UserController.updateUser(java.lang.String,com.stackroute.activitystream.model.User,javax.servlet.http.HttpSession)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public java.lang.String java.lang.Object.toString()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+2018-01-07 18:27:29 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'userController'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'circleDAO'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'messageDAO'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userCircleDAO'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userDAO'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'circle'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'circle'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'circle' to allow for resolving potential circular references
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'circle'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'message'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'message'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'message' to allow for resolving potential circular references
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'message'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'user'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'user'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'user' to allow for resolving potential circular references
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'user'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userCircle'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'userCircle'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'userCircle' to allow for resolving potential circular references
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'userCircle'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userTag'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'userTag'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'userTag' to allow for resolving potential circular references
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'userTag'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$a53bf812]: AutowiredMethodElement for public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List)
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration' to allow for resolving potential circular references
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': AutowiredMethodElement for public void org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.setConfigurers(java.util.List)
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'requestMappingHandlerMapping'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'mvcConversionService'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'mvcConversionService'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration'
+2018-01-07 18:27:29 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'mvcConversionService' to allow for resolving potential circular references

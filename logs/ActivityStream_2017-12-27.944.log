@@ -1,0 +1,424 @@
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [READ]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63716833]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [UPGRADE]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3fbfbf84]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [UPGRADE_NOWAIT]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bafe935]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [UPGRADE_SKIPLOCKED]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4a7a965d]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [FORCE]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64a9d48c]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [PESSIMISTIC_READ]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=? lock in share mode
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@288cdaab]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [PESSIMISTIC_WRITE]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@99407c2]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [PESSIMISTIC_FORCE_INCREMENT]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@226eba67]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [OPTIMISTIC]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@35342d2f]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserCircle)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserCircle, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserCircle)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserCircle)
+          - SQL table alias mapping - usercircle0_
+          - alias suffix - 0_
+          - suffixed key columns - {userCirc1_3_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserCircle [OPTIMISTIC_FORCE_INCREMENT]: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=?
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.stackroute.activitystream.model.UserCircle: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=?
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.stackroute.activitystream.model.UserCircle: select usercircle0_.userCircleId as userCirc1_3_0_, usercircle0_.circleName as circleNa2_3_0_, usercircle0_.username as username3_3_0_ from user_circle usercircle0_ where usercircle0_.userCircleId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: com.stackroute.activitystream.model.UserTag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select userTagId from user_tag where userTagId =?
+2017-12-27 18:33:07 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select usertag_.userTagId, usertag_.tag as tag2_4_, usertag_.username as username3_4_ from user_tag usertag_ where usertag_.userTagId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into user_tag (tag, username, userTagId) values (?, ?, ?)
+2017-12-27 18:33:07 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update user_tag set tag=?, username=? where userTagId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from user_tag where userTagId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45667d98]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [NONE]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7123be6c]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [READ]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@77a2aa4a]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [UPGRADE]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2b917fb0]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [UPGRADE_NOWAIT]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3c4262d1]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [UPGRADE_SKIPLOCKED]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30c0d731]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [FORCE]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@422b8438]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [PESSIMISTIC_READ]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=? lock in share mode
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@629adce]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [PESSIMISTIC_WRITE]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@743c6ce4]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [PESSIMISTIC_FORCE_INCREMENT]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=? for update
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3bbf9027]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [OPTIMISTIC]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=?
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@70e13fa]
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 18:33:07 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : username
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 18:33:07 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.UserTag)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.UserTag, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.UserTag)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.UserTag)
+          - SQL table alias mapping - usertag0_
+          - alias suffix - 0_
+          - suffixed key columns - {userTagI1_4_0_}
+
+2017-12-27 18:33:07 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.UserTag [OPTIMISTIC_FORCE_INCREMENT]: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=?
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.stackroute.activitystream.model.UserTag: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=?
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.stackroute.activitystream.model.UserTag: select usertag0_.userTagId as userTagI1_4_0_, usertag0_.tag as tag2_4_0_, usertag0_.username as username3_4_0_ from user_tag usertag0_ where usertag0_.userTagId=?
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : circle
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : hibernate_sequence
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : message
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : user
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : user_circle
+2017-12-27 18:33:07 [main] DEBUG org.hibernate.mapping.Table - No alter strings for table : user_tag
+2017-12-27 18:33:07 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2017-12-27 18:33:07 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2017-12-27 18:33:07 [main] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2017-12-27 18:33:07 [main] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+2017-12-27 18:33:07 [main] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+2017-12-27 18:33:07 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@701bc94e
+2017-12-27 18:33:07 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 55a83bff-7432-4891-a5d5-6b0d785c23de (<unnamed>)
+2017-12-27 18:33:07 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'sessionFactory' to allow for resolving potential circular references
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'sessionFactory'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'circleDAO' via factory method to bean named 'sessionFactory'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.CircleDAOImpl]: AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.CircleDAOImpl.sessionFactory
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.CircleDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.daoimpl.CircleDAOImpl.userDAO
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.CircleDAOImpl]: AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.daoimpl.CircleDAOImpl.circleDAO
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'circleDAO' to allow for resolving potential circular references
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'circleDAO': AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.CircleDAOImpl.sessionFactory
+2017-12-27 18:33:07 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'circleDAO' to bean named 'sessionFactory'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'circleDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.UserDAO com.stackroute.activitystream.daoimpl.CircleDAOImpl.userDAO
+2017-12-27 18:33:07 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userDAO'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'userDAO'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'applicationContextConfig'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userDAO' via factory method to bean named 'sessionFactory'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.stackroute.activitystream.daoimpl.UserDAOImpl]: AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.UserDAOImpl.sessionFactory
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'userDAO' to allow for resolving potential circular references
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'userDAO': AutowiredFieldElement for private org.hibernate.SessionFactory com.stackroute.activitystream.daoimpl.UserDAOImpl.sessionFactory
+2017-12-27 18:33:07 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'sessionFactory'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'userDAO' to bean named 'sessionFactory'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.get' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 18:33:07 [main] DEBUG o.s.a.a.a.AnnotationAwareAspectJAutoProxyCreator - Creating implicit proxy for bean 'userDAO' with 0 common interceptors and 12 specific interceptors
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.stackroute.activitystream.daoimpl.UserDAOImpl@ad9e63e]
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.get' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public com.stackroute.activitystream.model.User com.stackroute.activitystream.daoimpl.UserDAOImpl.get(java.lang.String)
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public boolean com.stackroute.activitystream.daoimpl.UserDAOImpl.update(com.stackroute.activitystream.model.User)
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public boolean com.stackroute.activitystream.daoimpl.UserDAOImpl.delete(com.stackroute.activitystream.model.User)
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.list' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public java.util.List com.stackroute.activitystream.daoimpl.UserDAOImpl.list()
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public boolean com.stackroute.activitystream.daoimpl.UserDAOImpl.save(com.stackroute.activitystream.model.User)
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.exists' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public boolean com.stackroute.activitystream.daoimpl.UserDAOImpl.exists(java.lang.String)
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.UserDAOImpl.validate' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public boolean com.stackroute.activitystream.daoimpl.UserDAOImpl.validate(java.lang.String,java.lang.String)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public java.lang.String java.lang.Object.toString()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'userDAO'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'circleDAO' to bean named 'userDAO'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'circleDAO': AutowiredFieldElement for private com.stackroute.activitystream.dao.CircleDAO com.stackroute.activitystream.daoimpl.CircleDAOImpl.circleDAO
+2017-12-27 18:33:07 [main] DEBUG o.s.core.annotation.AnnotationUtils - Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.IllegalArgumentException: Annotation must not be null
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 18:33:07 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.CircleDAOImpl.get' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-12-27 18:33:07 [main] DEBUG o.s.a.a.a.AnnotationAwareAspectJAutoProxyCreator - Creating implicit proxy for bean 'circleDAO' with 0 common interceptors and 4 specific interceptors
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.stackroute.activitystream.daoimpl.CircleDAOImpl@476e8796]
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.CircleDAOImpl.get' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public com.stackroute.activitystream.model.Circle com.stackroute.activitystream.daoimpl.CircleDAOImpl.get(java.lang.String)
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.CircleDAOImpl.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-12-27 18:33:07 [main] DEBUG o.s.aop.framework.CglibAopProxy - Unable to apply any optimizations to advised method: public boolean com.stackroute.activitystream.daoimpl.CircleDAOImpl.update(com.stackroute.activitystream.model.Circle)
+2017-12-27 18:33:07 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'com.stackroute.activitystream.daoimpl.CircleDAOImpl.delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''

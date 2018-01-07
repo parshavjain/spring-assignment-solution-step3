@@ -1,0 +1,216 @@
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [READ]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=?
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ba05e38]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [UPGRADE]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=? for update
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e7dfd44]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [UPGRADE_NOWAIT]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=? for update
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6b760460]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [UPGRADE_SKIPLOCKED]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=? for update
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@28a6301f]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [FORCE]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=? for update
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@773e2eb5]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [PESSIMISTIC_READ]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=? lock in share mode
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1436a7ab]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [PESSIMISTIC_WRITE]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=? for update
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d36dff4]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [PESSIMISTIC_FORCE_INCREMENT]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=? for update
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5b94ccbc]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [OPTIMISTIC]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=?
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@336365bc]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : circleName
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : message
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : postedDate
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : receiverId
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : sender
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : streamType
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : tag
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.Message)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.Message, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.Message)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.Message)
+          - SQL table alias mapping - message0_
+          - alias suffix - 0_
+          - suffixed key columns - {messageI1_1_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.Message [OPTIMISTIC_FORCE_INCREMENT]: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=?
+2017-12-27 00:35:15 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.stackroute.activitystream.model.Message: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=?
+2017-12-27 00:35:15 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.stackroute.activitystream.model.Message: select message0_.messageId as messageI1_1_0_, message0_.circleName as circleNa2_1_0_, message0_.message as message3_1_0_, message0_.postedDate as postedDa4_1_0_, message0_.receiverId as receiver5_1_0_, message0_.senderName as senderNa6_1_0_, message0_.streamType as streamTy7_1_0_, message0_.tag as tag8_1_0_ from message message0_ where message0_.messageId=?
+2017-12-27 00:35:15 [main] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: com.stackroute.activitystream.model.User
+2017-12-27 00:35:15 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select username from user where username =?
+2017-12-27 00:35:15 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select user_.username, user_.name as name2_2_, user_.password as password3_2_ from user user_ where user_.username=?
+2017-12-27 00:35:15 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into user (name, password, username) values (?, ?, ?)
+2017-12-27 00:35:15 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update user set name=?, password=? where username=?
+2017-12-27 00:35:15 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from user where username=?
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4567e53d]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : password
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.stackroute.activitystream.model.User)
+    - Returns
+       - EntityReturnImpl(entity=com.stackroute.activitystream.model.User, querySpaceUid=<gen:0>, path=com.stackroute.activitystream.model.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.stackroute.activitystream.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {username1_2_0_}
+
+2017-12-27 00:35:15 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.stackroute.activitystream.model.User [NONE]: select user0_.username as username1_2_0_, user0_.name as name2_2_0_, user0_.password as password3_2_0_ from user user0_ where user0_.username=?
+2017-12-27 00:35:15 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5bb7643d]
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+2017-12-27 00:35:15 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : password

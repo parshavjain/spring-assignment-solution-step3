@@ -1,0 +1,64 @@
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : save
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [com.stackroute.activitystream.model.User@2e362407]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.User#will]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : save
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [com.stackroute.activitystream.model.Circle@45e140ae]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : save
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [com.stackroute.activitystream.model.Circle@45e140ae]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.User#will]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [John]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [John]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.User#will], EntityKey[com.stackroute.activitystream.model.User#john]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [Java]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [Java]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.Circle#Java]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : addUser
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [john, Java]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : addUser
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [john, Java]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.Circle#Java]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [john]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [john]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.Circle#Java], EntityKey[com.stackroute.activitystream.model.User#john]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [Java]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [Java]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.UserCircle#2758b491-fa5c-419e-9594-44b7c34c3e36]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : addUser
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [will, Java]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : addUser
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [will, Java]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.UserCircle#2758b491-fa5c-419e-9594-44b7c34c3e36]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [will]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [will]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.UserCircle#2758b491-fa5c-419e-9594-44b7c34c3e36], EntityKey[com.stackroute.activitystream.model.User#will]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [Java]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : get
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [Java]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.UserCircle#29609def-accb-4d95-b356-c3ff1df39c74]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : sendMessageToUser
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [chris, com.stackroute.activitystream.model.Message@5e8cda75]
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method Name : sendMessageToUser
+2017-12-27 19:07:05 [main] DEBUG c.s.a.aspect.DAOLoggingAspect - Method arguments : [chris, com.stackroute.activitystream.model.Message@5e8cda75]
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Found thread-bound Session [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.stackroute.activitystream.model.UserCircle#29609def-accb-4d95-b356-c3ff1df39c74]],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for Hibernate transaction
+2017-12-27 19:07:05 [main] DEBUG o.s.o.h.HibernateTransactionManager - Participating in existing transaction

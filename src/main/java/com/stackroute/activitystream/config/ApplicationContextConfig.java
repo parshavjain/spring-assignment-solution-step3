@@ -1,6 +1,5 @@
 package com.stackroute.activitystream.config;
 
-import java.sql.Timestamp;
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -11,11 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import com.stackroute.activitystream.aspect.DAOLoggingAspect;
+import com.stackroute.activitystream.aspect.LoggingAspect;
 import com.stackroute.activitystream.dao.CircleDAO;
 import com.stackroute.activitystream.dao.MessageDAO;
 import com.stackroute.activitystream.dao.UserCircleDAO;
@@ -47,6 +49,7 @@ import com.stackroute.activitystream.model.UserTag;
 @EnableWebMvc
 @Configuration
 @EnableTransactionManagement
+@EnableAspectJAutoProxy(proxyTargetClass=true)
 @ComponentScan(basePackages = "com.stackroute.activitystream")
 public class ApplicationContextConfig {
 
@@ -59,22 +62,22 @@ public class ApplicationContextConfig {
 	 * 4. Password
 	 */
 	@Bean(name = "dataSource")
-	/*public DataSource getDataSource() {
+	public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://localhost:3306/activitystream_step3");
 	    dataSource.setUsername("root");
 	    dataSource.setPassword("P@ssw0rd");
 	    return dataSource;
-	}*/
-	public DataSource getDataSource() {
+	}
+	/*public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://localhost:3306/" + System.getenv("MYSQL_DATABASE"));
 	    dataSource.setUsername(System.getenv("MYSQL_USER"));
 	    dataSource.setPassword(System.getenv("MYSQL_PASSWORD"));
 	    return dataSource;
-	}
+	}*/
 	
 	
 	/**
@@ -142,5 +145,17 @@ public class ApplicationContextConfig {
 	@Bean(name = "userDAO")
 	public UserDAO getUserDAO(SessionFactory sessionFactory) {
 	    return new UserDAOImpl(sessionFactory);
+	}
+	
+	@Autowired
+	@Bean(name = "daoLoggingAspect")
+	public DAOLoggingAspect getDAOLoggingAspect() {
+	    return new DAOLoggingAspect();
+	}
+	
+	@Autowired
+	@Bean(name = "loggingAspect")
+	public LoggingAspect getLoggingAspect() {
+	    return new LoggingAspect();
 	}
 }
