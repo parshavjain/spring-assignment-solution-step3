@@ -62,22 +62,22 @@ public class ApplicationContextConfig {
 	 * 4. Password
 	 */
 	@Bean(name = "dataSource")
-	public DataSource getDataSource() {
+	/*public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://localhost:3306/activitystream_step3");
 	    dataSource.setUsername("root");
 	    dataSource.setPassword("P@ssw0rd");
 	    return dataSource;
-	}
-	/*public DataSource getDataSource() {
+	}*/
+	public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://localhost:3306/" + System.getenv("MYSQL_DATABASE"));
 	    dataSource.setUsername(System.getenv("MYSQL_USER"));
 	    dataSource.setPassword(System.getenv("MYSQL_PASSWORD"));
 	    return dataSource;
-	}*/
+	}
 	
 	
 	/**
