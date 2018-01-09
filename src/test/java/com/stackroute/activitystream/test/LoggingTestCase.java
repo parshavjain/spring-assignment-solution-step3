@@ -36,56 +36,54 @@ import ch.qos.logback.core.joran.util.ConfigurationWatchListUtil;
 @WebAppConfiguration
 public class LoggingTestCase {
 
-	@Test
-	public void logBackXMLFileCreatedOrNotTestCase() {
-		ClassLoader classLoader = getClass().getClassLoader();
-		File logFile = new File(classLoader.getResource("logback.xml").getFile());
-		Assert.assertTrue("You have to create logback.xml file in resources folder", !logFile.exists());
 
-	}
-
-	@Test
-	public void logFileGeneratedOrNotTestCase() throws ParserConfigurationException, SAXException, IOException {
-		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
-		File logFile = ConfigurationWatchListUtil.getConfigurationWatchList(context).getCopyOfFileWatchList().get(0);
-		Assert.assertTrue("You have to create logback.xml file in resources folder", logFile.exists());
-		File clientLogFile;
-		FileAppender<?> fileAppender = null;
-
-		for (Logger logger : context.getLoggerList()) {
-			for (Iterator<Appender<ILoggingEvent>> index = logger.iteratorForAppenders(); index.hasNext();) {
-				Object appender = index.next();
-				if (appender instanceof FileAppender) {
-					fileAppender = (FileAppender<?>) appender;
-				}
-			}
-		}
-		assertNotNull("File appender is not proper.  please check logback.xml file", fileAppender);
-		clientLogFile = new File(fileAppender.getFile());
-		assertNotNull("Log file not generated.  please check logback.xml file", clientLogFile);
-	}
-
-	@Test
-	public void logggedTheMessagesInFileOrNotTestCase() throws ParserConfigurationException, SAXException, IOException {
-		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
-		File logFile = ConfigurationWatchListUtil.getConfigurationWatchList(context).getCopyOfFileWatchList().get(0);
-		Assert.assertTrue("You have to create logback.xml file in resources folder", logFile.exists());
-		File clientLogFile;
-		FileAppender<?> fileAppender = null;
-
-		for (Logger logger : context.getLoggerList()) {
-			for (Iterator<Appender<ILoggingEvent>> index = logger.iteratorForAppenders(); index.hasNext();) {
-				Object appender = index.next();
-				if (appender instanceof FileAppender) {
-					fileAppender = (FileAppender<?>) appender;
-				}
-			}
-		}
-		assertNotNull("File appender is not proper.  please check logback.xml file", fileAppender);
-		clientLogFile = new File(fileAppender.getFile());
-		assertNotNull("Log file not generated.  please check logback.xml file", clientLogFile);
-
-		Assert.assertNotEquals("Log file is created but it is empty", 0, clientLogFile.length());
-	}
+    @Test   
+    public void logBackXMLFileCreatedOrNotTestCase()
+    {
+        ClassLoader classLoader = getClass().getClassLoader();
+        File logFile = new File(classLoader.getResource("logback.xml").getFile());
+        Assert.assertTrue("You have to create logback.xml file in resources folder", logFile.exists());
+    }
+    @Test
+    public void logFileGeneratedOrNotTestCase() throws ParserConfigurationException, SAXException, IOException
+    {
+        LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
+        File logFile =  ConfigurationWatchListUtil.getConfigurationWatchList(context).getCopyOfFileWatchList().get(0);
+        Assert.assertTrue("You have to create logback.xml file in resources folder", logFile.exists());
+        File clientLogFile;
+        FileAppender<?> fileAppender = null;
+        for (Logger logger : context.getLoggerList()) {
+                for (Iterator<Appender<ILoggingEvent>> index = logger.iteratorForAppenders(); index.hasNext();) {
+                    Object appender = index.next();
+                    if (appender instanceof FileAppender) {
+                        fileAppender=(FileAppender<?>)appender;
+                   }
+                }
+            }
+        assertNotNull("File appender is not proper.  please check logback.xml file", fileAppender);
+        clientLogFile=new File(fileAppender.getFile());
+        assertNotNull("Log file not generated.  please check logback.xml file", clientLogFile);
+    }
+    @Test
+    public void logggedTheMessagesInFileOrNotTestCase() throws ParserConfigurationException, SAXException, IOException
+    {
+        LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
+        File logFile =  ConfigurationWatchListUtil.getConfigurationWatchList(context).getCopyOfFileWatchList().get(0);
+        Assert.assertTrue("You have to create logback.xml file in resources folder", logFile.exists());
+        File clientLogFile;
+        FileAppender<?> fileAppender = null;
+        for (Logger logger : context.getLoggerList()) {
+                for (Iterator<Appender<ILoggingEvent>> index = logger.iteratorForAppenders(); index.hasNext();) {
+                    Object appender = index.next();
+                    if (appender instanceof FileAppender) {
+                        fileAppender=(FileAppender<?>)appender;
+                   }
+                }
+            }
+        assertNotNull("File appender is not proper.  please check logback.xml file", fileAppender);
+        clientLogFile=new File(fileAppender.getFile());
+        assertNotNull("Log file not generated.  please check logback.xml file", clientLogFile);
+        Assert.assertNotEquals("Log file is created but it is empty",0,clientLogFile.length());
+    }
 
 }

@@ -49,8 +49,9 @@ import com.stackroute.activitystream.model.UserTag;
 @EnableWebMvc
 @Configuration
 @EnableTransactionManagement
-@EnableAspectJAutoProxy(proxyTargetClass=true)
 @ComponentScan(basePackages = "com.stackroute.activitystream")
+
+@EnableAspectJAutoProxy
 public class ApplicationContextConfig {
 
 	/**
@@ -62,22 +63,22 @@ public class ApplicationContextConfig {
 	 * 4. Password
 	 */
 	@Bean(name = "dataSource")
-	/*public DataSource getDataSource() {
+	public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://localhost:3306/activitystream_step3");
 	    dataSource.setUsername("root");
 	    dataSource.setPassword("P@ssw0rd");
 	    return dataSource;
-	}*/
-	public DataSource getDataSource() {
+	}
+	/*public DataSource getDataSource() {
 		BasicDataSource dataSource = new BasicDataSource();		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 	    dataSource.setUrl("jdbc:mysql://localhost:3306/" + System.getenv("MYSQL_DATABASE"));
 	    dataSource.setUsername(System.getenv("MYSQL_USER"));
 	    dataSource.setPassword(System.getenv("MYSQL_PASSWORD"));
 	    return dataSource;
-	}
+	}*/
 	
 	
 	/**
@@ -123,7 +124,7 @@ public class ApplicationContextConfig {
 	    return transactionManager;
 	}
 
-	@Autowired
+	/*@Autowired
 	@Bean(name = "messageDAO")
 	public MessageDAO getMessageDAO(SessionFactory sessionFactory) {
 	    return new MessageDAOImpl(sessionFactory);
@@ -145,16 +146,15 @@ public class ApplicationContextConfig {
 	@Bean(name = "userDAO")
 	public UserDAO getUserDAO(SessionFactory sessionFactory) {
 	    return new UserDAOImpl(sessionFactory);
-	}
+	}*/
 	
-	@Autowired
-	@Bean(name = "daoLoggingAspect")
+	
+	@Bean
 	public DAOLoggingAspect getDAOLoggingAspect() {
 	    return new DAOLoggingAspect();
 	}
 	
-	@Autowired
-	@Bean(name = "loggingAspect")
+	@Bean
 	public LoggingAspect getLoggingAspect() {
 	    return new LoggingAspect();
 	}
